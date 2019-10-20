@@ -13,4 +13,5 @@ platforms/*
 node_modules
 hooks
 build.json
+google-services.json
 # End of https://www.gitignore.io/api/apachecordova

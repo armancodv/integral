@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.armanco.integral" version="4.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="com.armanco.integral" version="4.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Integral</name>
     <description>
         This app is the list of integrals.
@@ -26,8 +26,8 @@
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
+        <icon background="res/b.png" foreground="res/f.png" density="xxxhdpi" src="res/icon.png" />
     </platform>
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova-plugin-admob-free" />
-    <icon src="res/icon.png" />
 </widget>

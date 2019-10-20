@@ -1,10 +1,11 @@
 class Model {
     constructor() {
-        this.version = '4.0.0';
+        this.version = '4.0.1';
         this.package = 'com.armanco.integral';
         this.homepage = 'http://arman.co.com/';
         this.api = 'http://arman.co.com/api/applist_formula.php';
-        this.addId = 'ca-app-pub-4301546764905932/7472029245';
+        this.bannerId = 'ca-app-pub-4301546764905932/7472029245';
+        this.interstitialId = 'ca-app-pub-4301546764905932/6653178697';
         this.title = 'Integral';
         this.subTitle = 'Integral Table';
         this.description = 'This app is the list of integrals.';
@@ -181,11 +182,16 @@ class Controller {
     ready() {
         document.addEventListener("deviceready", () => {
             admob.banner.config({
-                id: this.model.addId,
+                id: this.model.bannerId,
                 isTesting: false,
                 autoShow: true
             });
             admob.banner.prepare();
+            admob.interstitial.config({
+                id: this.model.interstitialId,
+                isTesting: false,
+                autoShow: true
+            });
         }, false);
     }
 
@@ -221,6 +227,7 @@ class Controller {
                     });
                 });
             }
+            admob.interstitial.prepare();
             this.changePage(page);
         });
     }
