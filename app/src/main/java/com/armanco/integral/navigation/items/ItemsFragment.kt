@@ -1,4 +1,4 @@
-package com.armanco.integral.navigation.details
+package com.armanco.integral.navigation.items
 
 import android.os.Bundle
 import android.view.View
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.armanco.integral.R
 
-class DetailsFragment: Fragment(R.layout.fragment_details) {
-    private val model: DetailsViewModel by viewModels()
+class ItemsFragment: Fragment(R.layout.fragment_details) {
+    private val model: ItemsViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

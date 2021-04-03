@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.armanco.integral.navigation.list.ListFragment"
+        android:name="com.armanco.integral.navigation.category.CategoryFragment"
         android:label="ListFragment" >
         <action
             android:id="@+id/action_listFragment_to_detailsFragment"
@@ -13,6 +13,6 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.armanco.integral.navigation.details.DetailsFragment"
+        android:name="com.armanco.integral.navigation.items.ItemsFragment"
         android:label="DetailsFragment" />
 </navigation>

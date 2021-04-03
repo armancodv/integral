@@ -2,5 +2,9 @@ package com.armanco.integral.models
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-data class Item(val id: String, val categoryId: String, @DrawableRes val drawableRes: Int, @StringRes val stringRes: Int)
+@Entity
+data class Item(@PrimaryKey val id: String, @ColumnInfo(name = "category_id") val categoryId: String, @ColumnInfo(name = "drawable_res") @DrawableRes val drawableRes: Int, @ColumnInfo(name = "string_res") @StringRes val stringRes: Int)
