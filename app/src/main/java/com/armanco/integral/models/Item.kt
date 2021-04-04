@@ -7,4 +7,4 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Item(@PrimaryKey val id: String, @ColumnInfo(name = "category_id") val categoryId: String, @ColumnInfo(name = "drawable_res") @DrawableRes val drawableRes: Int, @ColumnInfo(name = "string_res") @StringRes val stringRes: Int)
+data class Item(@PrimaryKey val id: String, @ColumnInfo(name = "category_id", index = true) val categoryId: String, @ColumnInfo(name = "drawable_res") @DrawableRes val drawableRes: Int, @ColumnInfo(name = "string_res") @StringRes val stringRes: Int)
