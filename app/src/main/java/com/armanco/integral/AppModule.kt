@@ -30,5 +30,5 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideItemDao(db: Db) = db.itemDao()
+    fun provideItemDao(db: Db) = db.formulaDao()
 }

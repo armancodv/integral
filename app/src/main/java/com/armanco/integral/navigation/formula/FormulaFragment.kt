@@ -1,18 +1,22 @@
-package com.armanco.integral.navigation.items
+package com.armanco.integral.navigation.formula
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.armanco.integral.R
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.fragment_formula.*
 
-class ItemsFragment: Fragment(R.layout.fragment_item) {
-    private val model: ItemsViewModel by viewModels()
+@AndroidEntryPoint
+class FormulaFragment: Fragment(R.layout.fragment_formula) {
+    private val model: FormulaViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         model.load(arguments?.getString(ID_KEY))
-        model.items.observe(viewLifecycleOwner) { items ->
+        model.formulas.observe(viewLifecycleOwner) { formulas ->
+            formulaListView?.with(formulas)
         }
     }
 

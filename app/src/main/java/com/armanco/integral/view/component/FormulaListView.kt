@@ -6,23 +6,23 @@ import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.armanco.integral.R
-import com.armanco.integral.models.Category
-import com.armanco.integral.view.adapter.CategoryAdapter
-import kotlinx.android.synthetic.main.view_category_list.view.*
+import com.armanco.integral.models.Formula
+import com.armanco.integral.view.adapter.FormulaAdapter
+import kotlinx.android.synthetic.main.view_formula_list.view.*
 
-class CategoryListView(context: Context, attrs: AttributeSet): ConstraintLayout(context, attrs) {
+class FormulaListView(context: Context, attrs: AttributeSet): ConstraintLayout(context, attrs) {
 
-    var onCardClick: ((Category)->Unit)? = null
-    private var adapter = CategoryAdapter()
+    var onCardClick: ((Formula)->Unit)? = null
+    private var adapter = FormulaAdapter()
     private var layoutManager =  LinearLayoutManager(context)
 
     init {
-        LayoutInflater.from(context).inflate(R.layout.view_category_list, this, true)
+        LayoutInflater.from(context).inflate(R.layout.view_formula_list, this, true)
         rvCategory?.adapter = adapter
         rvCategory?.layoutManager = layoutManager
     }
 
-    fun with(categories: List<Category>) {
+    fun with(categories: List<Formula>) {
         adapter.onCardClick = onCardClick
         adapter.data = categories
     }

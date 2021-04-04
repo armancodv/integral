@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/categoryFragment">
 
     <fragment
-        android:id="@+id/listFragment"
+        android:id="@+id/categoryFragment"
         android:name="com.armanco.integral.navigation.category.CategoryFragment"
-        android:label="ListFragment" >
+        android:label="CategoryFragment" >
         <action
-            android:id="@+id/action_listFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/action_categoryFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.armanco.integral.navigation.items.ItemsFragment"
-        android:label="DetailsFragment" />
+        android:id="@+id/itemsFragment"
+        android:name="com.armanco.integral.navigation.formula.FormulaFragment"
+        android:label="ItemsFragment" />
 </navigation>
