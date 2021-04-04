@@ -29,7 +29,7 @@ class CategoryFragment: Fragment(R.layout.fragment_category) {
 
     private fun navigateToItem(category: Category) {
         Log.d("category", category.toString())
-        findNavController().navigate(R.id.action_categoryFragment_to_itemsFragment,
+        findNavController().navigate(R.id.action_categoryFragment_to_formulaFragment,
         Bundle().apply {
             putInt(ID_KEY, category.id)
         })

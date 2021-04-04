@@ -3,9 +3,12 @@ package com.armanco.integral.navigation.formula
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.armanco.integral.R
+import com.armanco.integral.navigation.image.ImageFragment.Companion.IMAGE_KEY
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_formula.*
 
@@ -15,11 +18,21 @@ class FormulaFragment: Fragment(R.layout.fragment_formula) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        formulaListView?.onCardClick = {
+            navigateToImage(it.drawableRes)
+        }
         model.load(arguments?.getInt(ID_KEY))
         model.formulas.observe(viewLifecycleOwner) { formulas ->
             Log.d("formula", formulas.toString())
             formulaListView?.with(formulas)
         }
+    }
+
+    private fun navigateToImage(@DrawableRes drawableRes: Int) {
+        findNavController().navigate(R.id.action_formulaFragment_to_imageFragment,
+            Bundle().apply {
+                putInt(IMAGE_KEY, drawableRes)
+            })
     }
 
     companion object {
