@@ -7,4 +7,4 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Category(@PrimaryKey val id: String, @ColumnInfo(name = "drawable_res") @DrawableRes val drawableRes: Int, @ColumnInfo(name = "string_res") @StringRes val stringRes: Int)
+data class Category(@PrimaryKey val id: Int, @ColumnInfo(name = "drawable_res") @DrawableRes val drawableRes: Int, @ColumnInfo(name = "string_res") @StringRes val stringRes: Int)

@@ -1,6 +1,7 @@
 package com.armanco.integral.navigation.formula
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -14,8 +15,9 @@ class FormulaFragment: Fragment(R.layout.fragment_formula) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        model.load(arguments?.getString(ID_KEY))
+        model.load(arguments?.getInt(ID_KEY))
         model.formulas.observe(viewLifecycleOwner) { formulas ->
+            Log.d("formula", formulas.toString())
             formulaListView?.with(formulas)
         }
     }

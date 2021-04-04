@@ -3,7 +3,6 @@ package com.armanco.integral.navigation.category
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.armanco.integral.R
 import com.armanco.integral.managers.repository.CategoryRepository
 import com.armanco.integral.models.Category
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -18,6 +17,7 @@ class CategoryViewModel @Inject constructor(
 
     fun load() {
         viewModelScope.launch {
+            repository.populate()
             categories.value = repository.getAll()
         }
     }

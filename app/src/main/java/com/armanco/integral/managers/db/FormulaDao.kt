@@ -9,7 +9,7 @@ interface FormulaDao {
     suspend fun getAll(): List<Formula>
 
     @Query("SELECT * FROM formula WHERE category_id = :categoryId")
-    suspend fun getByCategory(categoryId: String): List<Formula>
+    suspend fun getByCategory(categoryId: Int): List<Formula>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(vararg formula: Formula)

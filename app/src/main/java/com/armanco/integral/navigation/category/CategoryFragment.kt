@@ -31,7 +31,7 @@ class CategoryFragment: Fragment(R.layout.fragment_category) {
         Log.d("category", category.toString())
         findNavController().navigate(R.id.action_categoryFragment_to_itemsFragment,
         Bundle().apply {
-            putString(ID_KEY, category.id)
+            putInt(ID_KEY, category.id)
         })
     }
 }
