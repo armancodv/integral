@@ -8,5 +8,7 @@ class CategoryRepository @Inject constructor(
     private val categoryDao: CategoryDao
 ){
     suspend fun getAll() = categoryDao.getAll()
+    suspend fun getCount() = categoryDao.getCount()
+    suspend fun deleteAll() = categoryDao.deleteAll()
     suspend fun insertAll(vararg category: Category) = categoryDao.insertAll(*category)
 }
