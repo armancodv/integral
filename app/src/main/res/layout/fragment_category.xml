@@ -5,4 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".navigation.category.CategoryFragment">
 
+    <com.armanco.integral.view.component.CategoryListView
+        android:id="@+id/categoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
