@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#4dc7bc</color>
     <color name="primaryDark">#44b1a7</color>
+    <color name="primaryDarker">#317f78</color>
     <color name="lightBg">#fafafa</color>
     <color name="darkBg">#333333</color>
     <color name="grayEE">#EEEEEE</color>
