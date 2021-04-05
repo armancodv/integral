@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.armanco.integral.navigation.category.CategoryFragment"
+        android:label="Integral" >
+        <action
+            android:id="@+id/action_categoryFragment_to_formulaFragment"
+            app:destination="@id/formulaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_no"
+            app:popEnterAnim="@anim/slide_no"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/formulaFragment"
+        android:name="com.armanco.integral.navigation.formula.FormulaFragment"
+        android:label="{title}" >
+
+        <argument
+            android:name="id"
+            app:argType="integer" />
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_formulaFragment_to_imageFragment"
+            app:destination="@id/imageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_no"
+            app:popEnterAnim="@anim/slide_no"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.armanco.integral.navigation.image.ImageFragment"
+        android:label="{title}">
+
+        <argument
+            android:name="image"
+            app:argType="integer" />
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+    </fragment>
+</navigation>
