@@ -16,7 +16,6 @@ class FormulaViewModel @Inject constructor(
     val formulas = MutableLiveData<List<Formula>>()
     fun load(id: Int?) {
         viewModelScope.launch {
-            repository.populate()
             formulas.value = id?.let { repository.getByCategory(it) }
         }
     }

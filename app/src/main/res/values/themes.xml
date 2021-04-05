@@ -42,4 +42,8 @@
         <item name="android:background">@color/grayEE</item>
     </style>
 
+    <style name="Fragment">
+        <item name="android:background">@color/lightBg</item>
+    </style>
+
 </resources>

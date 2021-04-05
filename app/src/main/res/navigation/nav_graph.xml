@@ -9,7 +9,11 @@
         android:label="Integral" >
         <action
             android:id="@+id/action_categoryFragment_to_formulaFragment"
-            app:destination="@id/formulaFragment" />
+            app:destination="@id/formulaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_no"
+            app:popEnterAnim="@anim/slide_no"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/formulaFragment"
@@ -26,7 +30,11 @@
 
         <action
             android:id="@+id/action_formulaFragment_to_imageFragment"
-            app:destination="@id/imageFragment" />
+            app:destination="@id/imageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_no"
+            app:popEnterAnim="@anim/slide_no"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/imageFragment"

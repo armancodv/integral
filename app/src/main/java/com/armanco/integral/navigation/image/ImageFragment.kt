@@ -23,7 +23,7 @@ class ImageFragment: Fragment(R.layout.fragment_image) {
 
     private fun showInterstitialAd() {
         mInterstitialAd = InterstitialAd(activity)
-        mInterstitialAd?.adUnitId = "ca-app-pub-3940256099942544/1033173712"
+        mInterstitialAd?.adUnitId = "ca-app-pub-4301546764905932/6653178697"
         val adRequest = AdRequest.Builder().build()
         mInterstitialAd?.loadAd(adRequest)
         mInterstitialAd?.adListener = object : AdListener() {

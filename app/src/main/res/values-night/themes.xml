@@ -33,4 +33,8 @@
         <item name="android:background">@color/gray44</item>
     </style>
 
+    <style name="Fragment">
+        <item name="android:background">@color/darkBg</item>
+    </style>
+
 </resources>
