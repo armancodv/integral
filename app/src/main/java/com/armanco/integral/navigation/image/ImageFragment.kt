@@ -40,5 +40,6 @@ class ImageFragment: Fragment(R.layout.fragment_image) {
 
     companion object {
         const val IMAGE_KEY = "image"
+        const val TITLE_KEY = "title"
     }
 }

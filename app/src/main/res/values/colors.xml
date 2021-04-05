@@ -8,4 +8,5 @@
     <color name="lightBg">#fafafa</color>
     <color name="darkBg">#333333</color>
     <color name="grayEE">#EEEEEE</color>
+    <color name="gray44">#444444</color>
 </resources>

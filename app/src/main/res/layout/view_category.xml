@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvTitle"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/primaryDarker" />
+        style="@style/CategoryImageView" />
 
 
     <TextView
@@ -33,7 +33,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/grayEE"
+        style="@style/Divider"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 
