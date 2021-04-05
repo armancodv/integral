@@ -9,6 +9,7 @@ import com.armanco.integral.R
 import com.armanco.integral.models.Formula
 import com.armanco.integral.view.adapter.FormulaAdapter
 import kotlinx.android.synthetic.main.view_formula_list.view.*
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 
 class FormulaListView(context: Context, attrs: AttributeSet): ConstraintLayout(context, attrs) {
 
@@ -18,8 +19,11 @@ class FormulaListView(context: Context, attrs: AttributeSet): ConstraintLayout(c
 
     init {
         LayoutInflater.from(context).inflate(R.layout.view_formula_list, this, true)
-        rvCategory?.adapter = adapter
-        rvCategory?.layoutManager = layoutManager
+        rvCategory?.let {
+            it.adapter = adapter
+            it.layoutManager = layoutManager
+            OverScrollDecoratorHelper.setUpOverScroll(it, OverScrollDecoratorHelper.ORIENTATION_VERTICAL)
+        }
     }
 
     fun with(categories: List<Formula>) {

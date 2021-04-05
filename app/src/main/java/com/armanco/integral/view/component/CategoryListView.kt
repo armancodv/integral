@@ -9,6 +9,7 @@ import com.armanco.integral.R
 import com.armanco.integral.models.Category
 import com.armanco.integral.view.adapter.CategoryAdapter
 import kotlinx.android.synthetic.main.view_category_list.view.*
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 
 class CategoryListView(context: Context, attrs: AttributeSet): ConstraintLayout(context, attrs) {
 
@@ -18,8 +19,12 @@ class CategoryListView(context: Context, attrs: AttributeSet): ConstraintLayout(
 
     init {
         LayoutInflater.from(context).inflate(R.layout.view_category_list, this, true)
-        rvCategory?.adapter = adapter
-        rvCategory?.layoutManager = layoutManager
+        rvCategory?.let {
+            it.adapter = adapter
+            it.layoutManager = layoutManager
+            OverScrollDecoratorHelper.setUpOverScroll(it, OverScrollDecoratorHelper.ORIENTATION_VERTICAL)
+        }
+
     }
 
     fun with(categories: List<Category>) {
