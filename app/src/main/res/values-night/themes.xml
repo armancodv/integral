@@ -37,4 +37,8 @@
         <item name="android:background">@color/darkBg</item>
     </style>
 
+    <style name="SolverScreen">
+        <item name="android:background">@color/gray44</item>
+    </style>
+
 </resources>

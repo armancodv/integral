@@ -19,10 +19,8 @@ class CategoryViewModel @Inject constructor(
 
     fun load() {
         viewModelScope.launch {
-            if(repository.getCount() == 0 || formulaRepository.getCount() == 0) {
-                repository.populate()
-                formulaRepository.populate()
-            }
+            repository.populate()
+            formulaRepository.populate()
             categories.value = repository.getAll()
         }
     }

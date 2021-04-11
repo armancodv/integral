@@ -248,4 +248,16 @@
     <string name="formula_11_25">25</string>
     <string name="formula_11_26">26</string>
 
+    <string name="function">Function</string>
+    <string name="lower_limit">Lower Limit (a)</string>
+    <string name="upper_limit">Upper Limit (b)</string>
+    <string name="steps">Steps (n)</string>
+    <string name="trapezoidal">Trapezoidal</string>
+    <string name="simpson">Simpson</string>
+    <string name="romberg">Romberg</string>
+    <string name="calculate">Calculate</string>
+    <string name="solver">Solver</string>
+    <string name="solver_function_info">+, -, *, /, ^, (, ), sin, cos, sinh, cosh, tan, tanh, asin, acos, atan, e, pi, ln, log, sqrt, cbrt</string>
+    <string name="method">Method</string>
+
 </resources>
