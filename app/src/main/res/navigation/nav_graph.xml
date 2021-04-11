@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/categoryFragment">
 
     <fragment
@@ -50,4 +52,17 @@
             app:argType="string" />
 
     </fragment>
+    <fragment
+        android:id="@+id/solverFragment"
+        android:name="com.armanco.integral.navigation.solver.SolverFragment"
+        android:label="Solver"
+        tools:layout="@layout/fragment_solver" />
+    <action
+        android:id="@+id/action_to_solverFragment"
+        app:destination="@id/solverFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_no"
+        app:popEnterAnim="@anim/slide_no"
+        app:popExitAnim="@anim/slide_out_right" />
+
 </navigation>

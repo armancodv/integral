@@ -46,4 +46,8 @@
         <item name="android:background">@color/lightBg</item>
     </style>
 
+    <style name="SolverScreen">
+        <item name="android:background">@color/grayEE</item>
+    </style>
+
 </resources>
