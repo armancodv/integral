@@ -31,6 +31,11 @@ Deploy a new version to the Google Play
 fastlane android internal
 ```
 Submit a new Internal Test
+### android screenshots
+```
+fastlane android screenshots
+```
+Build debug and test APK for screenshots
 
 ----
 

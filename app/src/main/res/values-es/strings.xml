@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="category_1">Racionales</string>
+    <string name="category_2">Exponenciales</string>
+    <string name="category_3">Logarítmicas</string>
+    <string name="category_4">Trigonométricas</string>
+    <string name="category_5">Inversas trigonométricas</string>
+    <string name="category_6">Hiperbólicas</string>
+    <string name="category_7">Inversas hiperbólicas</string>
+    <string name="category_8">Segundas derivadas</string>
+    <string name="category_9">Valor absoluto</string>
+    <string name="category_10">Especiales</string>
+    <string name="category_11">Integrales definidas</string>
+    <string name="function">Función</string>
+    <string name="lower_limit">Límite inferior (a)</string>
+    <string name="upper_limit">Límite superior (b)</string>
+    <string name="steps">Pasos (n)</string>
+    <string name="calculate">Calcular</string>
+    <string name="solver">Calculadora</string>
+    <string name="method">Método</string>
+</resources>

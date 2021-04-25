@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="category_1">عقلی</string>
+    <string name="category_2">گستاخانہ</string>
+    <string name="category_3">لوگرتھمز</string>
+    <string name="category_4">سہ رخی</string>
+    <string name="category_5">الٹا ٹرگنومیٹرک</string>
+    <string name="category_6">ہائپربولک</string>
+    <string name="category_7">الٹا ہائپربولک</string>
+    <string name="category_8">دوسرا مشتق</string>
+    <string name="category_9">مطلق قیمت</string>
+    <string name="category_10">خصوصی</string>
+    <string name="category_11">یقینی اجزاء</string>
+    <string name="function">فنکشن</string>
+    <string name="lower_limit">نچلی حد (a)</string>
+    <string name="upper_limit">اعلی حد (b)</string>
+    <string name="steps">اقدامات (n)</string>
+    <string name="calculate">حساب لگائیں</string>
+    <string name="solver">کیلکولیٹر</string>
+    <string name="method">طریقہ</string>
+</resources>

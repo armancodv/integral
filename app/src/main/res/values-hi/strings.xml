@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">समारोह</string>
+    <string name="lower_limit">निचली सीमा (a)</string>
+    <string name="upper_limit">ऊपरी सीमा (b)</string>
+    <string name="steps">चरण (n)</string>
+    <string name="calculate">गणना</string>
+    <string name="solver">कैलकुलेटर</string>
+    <string name="method">तरीका</string>
+    <string name="category_1">युक्तिसंगत</string>
+    <string name="category_2">युक्तिसंगत</string>
+    <string name="category_3">लघुगणक</string>
+    <string name="category_4">त्रिकोणमितीय</string>
+    <string name="category_5">त्रिकोणमितीय व्युत्क्रम करें</string>
+    <string name="category_6">अतिपरवलिक</string>
+    <string name="category_7">हाइपरबोलिक उलटा</string>
+    <string name="category_8">दूसरा डेरिवेटिव</string>
+    <string name="category_9">निरपेक्ष मूल्य</string>
+    <string name="category_10">विशेष</string>
+    <string name="category_11">निश्चित अभिन्न</string>
+</resources>

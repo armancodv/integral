@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">Funktion</string>
+    <string name="lower_limit">Untergrenze (a)</string>
+    <string name="upper_limit">Obergrenze (b)</string>
+    <string name="steps">Schritte (n)</string>
+    <string name="calculate">Berechnung</string>
+    <string name="solver">Taschenrechner</string>
+    <string name="method">Methode</string>
+    <string name="category_1">Rational</string>
+    <string name="category_2">Exponentiell</string>
+    <string name="category_3">Logarithmen</string>
+    <string name="category_4">Trigonometrisch</string>
+    <string name="category_5">Invers trigonometrisch</string>
+    <string name="category_6">Hyperbolisch</string>
+    <string name="category_7">Invers hyperbolisch</string>
+    <string name="category_8">Zweite Derivate</string>
+    <string name="category_9">Absolutwert</string>
+    <string name="category_10">Besondere</string>
+    <string name="category_11">Bestimmte Integrale</string>
+</resources>

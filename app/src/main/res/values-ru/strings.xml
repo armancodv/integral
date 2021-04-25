@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">Функция</string>
+    <string name="lower_limit">Нижний предел (а)</string>
+    <string name="upper_limit">Верхний предел (б)</string>
+    <string name="steps">Шаги (n)</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="solver">Калькулятор</string>
+    <string name="method">Методика</string>
+    <string name="category_1">Рациональный</string>
+    <string name="category_2">Экспоненциальный</string>
+    <string name="category_3">Логарифмы</string>
+    <string name="category_4">Тригонометрический</string>
+    <string name="category_5">Обратный тригонометрический</string>
+    <string name="category_6">Гиперболический</string>
+    <string name="category_7">Обратный гиперболический</string>
+    <string name="category_8">Вторые производные</string>
+    <string name="category_9">Абсолютная величина</string>
+    <string name="category_10">Специальный</string>
+    <string name="category_11">Определенные интегралы</string>
+</resources>

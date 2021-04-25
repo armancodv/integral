@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">関数</string>
+    <string name="lower_limit">下限（a)</string>
+    <string name="upper_limit">上限（b）</string>
+    <string name="steps">ステップ（n）</string>
+    <string name="calculate">計算する</string>
+    <string name="solver">電卓</string>
+    <string name="method">方法</string>
+    <string name="category_1">合理的な</string>
+    <string name="category_2">指数関数</string>
+    <string name="category_3">対数</string>
+    <string name="category_4">三角法</string>
+    <string name="category_5">逆三角関数</string>
+    <string name="category_6">双曲線</string>
+    <string name="category_7">逆双曲線</string>
+    <string name="category_8">二次導関数</string>
+    <string name="category_9">絶対値</string>
+    <string name="category_10">特別</string>
+    <string name="category_11">定積分</string>
+</resources>

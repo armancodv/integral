@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">دور</string>
+    <string name="lower_limit">الحد الأدنى (a)</string>
+    <string name="upper_limit">الحد الأعلى (b)</string>
+    <string name="steps">خطوات (n)</string>
+    <string name="calculate">احسب</string>
+    <string name="solver">آلة حاسبة</string>
+    <string name="method">طريقة</string>
+    <string name="category_1">معقول</string>
+    <string name="category_2">متسارع</string>
+    <string name="category_3">اللوغاريتمات</string>
+    <string name="category_4">حساب المثاثات</string>
+    <string name="category_5">المثلثية المعكوسة</string>
+    <string name="category_6">القطعي</string>
+    <string name="category_7">قطعي معكوس</string>
+    <string name="category_8">المشتقات الثانية</string>
+    <string name="category_9">قيمه مطلقه</string>
+    <string name="category_10">خاص</string>
+    <string name="category_11">تكاملات محددة</string>
+</resources>

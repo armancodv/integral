@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">함수</string>
+    <string name="lower_limit">하한 (a)</string>
+    <string name="upper_limit">상한선 (b)</string>
+    <string name="steps">단계 (n)</string>
+    <string name="calculate">계산하다</string>
+    <string name="solver">계산자</string>
+    <string name="method">방법</string>
+    <string name="category_1">합리적</string>
+    <string name="category_2">지수</string>
+    <string name="category_3">대수</string>
+    <string name="category_4">삼각법</string>
+    <string name="category_5">역삼 각</string>
+    <string name="category_6">쌍곡선</string>
+    <string name="category_7">역 쌍곡선</string>
+    <string name="category_8">2 차 파생 상품</string>
+    <string name="category_9">절대 값</string>
+    <string name="category_10">특별한</string>
+    <string name="category_11">명확한 적분</string>
+</resources>

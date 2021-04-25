@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">ফাংশন</string>
+    <string name="lower_limit">নিম্ন সীমা (a)</string>
+    <string name="upper_limit">উচ্চ সীমা (b)</string>
+    <string name="steps">পদক্ষেপ (n)</string>
+    <string name="calculate">গণনা</string>
+    <string name="solver">ক্যালকুলেটর</string>
+    <string name="method">পদ্ধতি</string>
+    <string name="category_1">যুক্তিসঙ্গত</string>
+    <string name="category_2">ঘৃণ্য</string>
+    <string name="category_3">লোগারিদমস</string>
+    <string name="category_4">ত্রিকোণমিতি</string>
+    <string name="category_5">বিপরীত ত্রিকোণমিতি</string>
+    <string name="category_6">হাইপারবোলিক</string>
+    <string name="category_7">বিপরীত হাইপারবোলিক olic</string>
+    <string name="category_8">দ্বিতীয় ডেরিভেটিভস</string>
+    <string name="category_9">পরম-মান</string>
+    <string name="category_10">বিশেষ</string>
+    <string name="category_11">চূড়ান্ত সংহত</string>
+</resources>
