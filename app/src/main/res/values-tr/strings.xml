@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">Fonksiyon</string>
+    <string name="lower_limit">Alt Sınır (a)</string>
+    <string name="upper_limit">Üst Limit (b)</string>
+    <string name="steps">Adımlar (n)</string>
+    <string name="calculate">Hesaplamak</string>
+    <string name="solver">Hesap makinesi</string>
+    <string name="method">Yöntem</string>
+    <string name="category_1">Akılcı</string>
+    <string name="category_2">Üstel</string>
+    <string name="category_3">Logaritmalar</string>
+    <string name="category_4">Trigonometrik</string>
+    <string name="category_5">Ters trigonometrik</string>
+    <string name="category_6">Hiperbolik</string>
+    <string name="category_7">Ters hiperbolik</string>
+    <string name="category_8">İkinci türevler</string>
+    <string name="category_9">Mutlak değer</string>
+    <string name="category_10">Özel</string>
+    <string name="category_11">Belirli integraller</string>
+</resources>

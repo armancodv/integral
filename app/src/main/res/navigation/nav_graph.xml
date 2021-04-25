@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.armanco.integral.navigation.category.CategoryFragment"
-        android:label="Integral" >
+        android:label="@string/app_name" >
         <action
             android:id="@+id/action_categoryFragment_to_formulaFragment"
             app:destination="@id/formulaFragment"
@@ -55,7 +55,7 @@
     <fragment
         android:id="@+id/solverFragment"
         android:name="com.armanco.integral.navigation.solver.SolverFragment"
-        android:label="Solver"
+        android:label="@string/solver"
         tools:layout="@layout/fragment_solver" />
     <action
         android:id="@+id/action_to_solverFragment"

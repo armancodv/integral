@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">功能</string>
+    <string name="lower_limit">下限（a)</string>
+    <string name="upper_limit">上限（b)</string>
+    <string name="steps">步骤（n）</string>
+    <string name="calculate">计算</string>
+    <string name="solver">计算器</string>
+    <string name="method">方法</string>
+    <string name="category_1">合理的</string>
+    <string name="category_2">指数的</string>
+    <string name="category_3">对数</string>
+    <string name="category_4">三角函数</string>
+    <string name="category_5">反三角</string>
+    <string name="category_6">双曲</string>
+    <string name="category_7">反双曲</string>
+    <string name="category_8">二阶导数</string>
+    <string name="category_9">绝对值</string>
+    <string name="category_10">特别的</string>
+    <string name="category_11">定积分</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="category_1">Rationel</string>
+    <string name="category_2">Eksponentiel</string>
+    <string name="category_3">Logaritmer</string>
+    <string name="category_4">Trigonometrisk</string>
+    <string name="category_5">Omvendt trigonometrisk</string>
+    <string name="category_6">Hyperbolisk</string>
+    <string name="category_7">Invers hyperbolsk</string>
+    <string name="category_8">Anden derivater</string>
+    <string name="category_9">Absolut værdi</string>
+    <string name="category_10">Særlig</string>
+    <string name="category_11">Bestemte integraler</string>
+    <string name="function">Fungere</string>
+    <string name="lower_limit">Nedre grænse (a)</string>
+    <string name="upper_limit">Øvre grænse (b)</string>
+    <string name="steps">Trin (n)</string>
+    <string name="calculate">Beregn</string>
+    <string name="solver">Lommeregner</string>
+    <string name="method">Metode</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">Fungsi</string>
+    <string name="lower_limit">Batas Bawah (a)</string>
+    <string name="upper_limit">Batas Atas (b)</string>
+    <string name="steps">Langkah (n)</string>
+    <string name="calculate">Menghitung</string>
+    <string name="solver">Kalkulator</string>
+    <string name="method">metode</string>
+    <string name="category_1">Rasional</string>
+    <string name="category_2">Eksponensial</string>
+    <string name="category_3">Logaritma</string>
+    <string name="category_4">Trigonometri</string>
+    <string name="category_5">Trigonometri terbalik</string>
+    <string name="category_6">Hiperbolis</string>
+    <string name="category_7">Hiperbolik terbalik</string>
+    <string name="category_8">Turunan kedua</string>
+    <string name="category_9">Nilai mutlak</string>
+    <string name="category_10">Khusus</string>
+    <string name="category_11">Integral pasti</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Integral</string>
+    <string name="function">تابع</string>
+    <string name="lower_limit">حد پایین (a)</string>
+    <string name="upper_limit">حد بالا (b)</string>
+    <string name="steps">مراحل (n)</string>
+    <string name="calculate">محاسبه</string>
+    <string name="solver">ماشین حساب</string>
+    <string name="method">روش</string>
+    <string name="category_1">گویا</string>
+    <string name="category_2">نمایی</string>
+    <string name="category_3">لگاریتمی</string>
+    <string name="category_4">مثلثاتی</string>
+    <string name="category_5">مثلثاتی معکوس</string>
+    <string name="category_6">هذلولی</string>
+    <string name="category_7">هذلولی معکوس</string>
+    <string name="category_8">مشتقات دوم</string>
+    <string name="category_9">قدر مطلق</string>
+    <string name="category_10">خاص</string>
+    <string name="category_11">انتگرال های مشخص</string>
+</resources>
