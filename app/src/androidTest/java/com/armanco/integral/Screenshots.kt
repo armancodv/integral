@@ -57,7 +57,7 @@ class Screenshots {
         Screengrab.screenshot("solver_light")
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES) }
         onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("solver_light")
+        Screengrab.screenshot("solver_dark")
 
     }
 

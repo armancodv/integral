@@ -1,4 +1,4 @@
-locales ['ar', 'bn-BD', 'da-DK', 'de-DE', 'es-ES', 'fa', 'fr-FR', 'hi-IN', 'id', 'it-IT', 'ja-JP', 'ko-KR', 'pt-PT', 'ru-RU', 'tr-TR', 'ur', 'zh-CN']
+locales ['en-US', 'ar', 'bn-BD', 'da-DK', 'de-DE', 'es-ES', 'fa', 'fr-FR', 'hi-IN', 'in', 'it-IT', 'ja-JP', 'ko-KR', 'pt-PT', 'ru-RU', 'tr-TR', 'ur', 'zh-CN']
 clear_previous_screenshots true
 tests_apk_path '/Users/armanco/StudioProjects/Integral/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk'
 app_apk_path '/Users/armanco/StudioProjects/Integral/app/build/outputs/apk/debug/app-debug.apk'

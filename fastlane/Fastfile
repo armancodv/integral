@@ -78,6 +78,7 @@ platform :android do
       build_type: 'AndroidTest'
     )
     capture_android_screenshots
+    supply
   end
 
 end
