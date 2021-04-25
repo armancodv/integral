@@ -23,13 +23,13 @@ class SolverFragment: Fragment(R.layout.fragment_solver) {
             model.function.value = it?.toString()
         }
         lowerLimit?.addTextChangedListener {
-            model.lowerLimit.value = it?.toString()?.toDouble() ?: 0.0
+            model.lowerLimit.value = it?.toString()?.toDoubleOrNull() ?: 0.0
         }
         upperLimit?.addTextChangedListener {
-            model.upperLimit.value = it?.toString()?.toDouble() ?: 1.0
+            model.upperLimit.value = it?.toString()?.toDoubleOrNull() ?: 1.0
         }
         steps?.addTextChangedListener {
-            model.steps.value = it?.toString()?.toInt() ?: 1
+            model.steps.value = it?.toString()?.toIntOrNull() ?: 1
         }
         trapezoidal?.setOnCheckedChangeListener { _, isChecked ->
             if(isChecked) model.setMethod(SolverViewModel.Companion.Method.Trapezoidal)
