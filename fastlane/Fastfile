@@ -67,4 +67,17 @@ platform :android do
     )
   end
 
+  desc "Build debug and test APK for screenshots"
+  lane :screenshots do
+    build_android_app(
+      task: 'assemble',
+      build_type: 'Debug'
+    )
+    build_android_app(
+      task: 'assemble',
+      build_type: 'AndroidTest'
+    )
+    capture_android_screenshots
+  end
+
 end
