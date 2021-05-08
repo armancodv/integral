@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.armanco.integral.R
+import com.armanco.integral.extensions.isPro
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
@@ -17,7 +18,7 @@ class ImageFragment: Fragment(R.layout.fragment_image) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        showInterstitialAd()
+        if(!isPro) showInterstitialAd()
         arguments?.getInt(IMAGE_KEY)?.let { photoView?.setImageResource(it) }
     }
 

@@ -39,6 +39,19 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    flavorDimensions 'default'
+    productFlavors {
+        free {
+            dimension 'default'
+            applicationId "com.armanco.integral"
+        }
+        pro {
+            dimension 'default'
+            applicationId "com.armanco.integral_pro"
+        }
+    }
+
 }
 
 dependencies {

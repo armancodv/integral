@@ -1,11 +1,13 @@
 package com.armanco.integral
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.armanco.integral.extensions.isPro
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,7 +18,8 @@ class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initAdMob()
+        if(!isPro) initAdMob()
+        else removeAdMob()
         initToolbar()
     }
 
@@ -24,6 +27,10 @@ class MainActivity: AppCompatActivity() {
         MobileAds.initialize(this)
         val adRequest = AdRequest.Builder().build()
         adView?.loadAd(adRequest)
+    }
+
+    private fun removeAdMob() {
+        adView?.visibility = View.GONE
     }
 
     private fun initToolbar() {
