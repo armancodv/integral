@@ -31,6 +31,16 @@ Deploy a new version to the Google Play
 fastlane android internal
 ```
 Submit a new Internal Test
+### android deploy_pro
+```
+fastlane android deploy_pro
+```
+Deploy a new version to the Google Play (PRO)
+### android internal_pro
+```
+fastlane android internal_pro
+```
+Submit a new Internal Test
 ### android screenshots
 ```
 fastlane android screenshots

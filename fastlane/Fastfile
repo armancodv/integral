@@ -28,7 +28,7 @@ platform :android do
     )
     gradle(task: "test")
     gradle(
-        task: 'assembleRelease',
+        task: 'assembleFreeRelease',
         properties: {
             "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
             "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
@@ -37,8 +37,9 @@ platform :android do
         }
     )
     upload_to_play_store(
+        package_name: 'com.armanco.integral',
         track: 'production',
-        apk: ENV['APK_PATH'],
+        apk: ENV['APK_PATH_FREE'],
         json_key: ENV['JSON_PATH'],
         skip_upload_aab: true
     )
@@ -51,7 +52,7 @@ platform :android do
     )
     gradle(task: "test")
     gradle(
-        task: 'assembleRelease',
+        task: 'assembleFreeRelease',
         properties: {
             "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
             "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
@@ -60,8 +61,58 @@ platform :android do
         }
     )
     upload_to_play_store(
+        package_name: 'com.armanco.integral',
         track: 'internal',
-        apk: ENV['APK_PATH'],
+        apk: ENV['APK_PATH_FREE'],
+        json_key: ENV['JSON_PATH'],
+        skip_upload_aab: true
+    )
+  end
+
+
+  desc "Deploy a new version to the Google Play (PRO)"
+  lane :deploy_pro do
+    validate_play_store_json_key(
+        json_key: ENV['JSON_PATH']
+    )
+    gradle(task: "test")
+    gradle(
+        task: 'assembleProRelease',
+        properties: {
+            "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+    upload_to_play_store(
+        package_name: 'com.armanco.integral_pro',
+        track: 'production',
+        apk: ENV['APK_PATH_PRO'],
+        json_key: ENV['JSON_PATH'],
+        skip_upload_aab: true
+    )
+  end
+
+  desc "Submit a new Internal Test"
+  lane :internal_pro do
+    validate_play_store_json_key(
+        json_key: ENV['JSON_PATH']
+    )
+    gradle(task: "test")
+    gradle(
+        task: 'assembleProRelease',
+        properties: {
+            "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+    upload_to_play_store(
+        package_name: 'com.armanco.integral_pro',
+        track: 'internal',
+        apk: ENV['APK_PATH_PRO'],
         json_key: ENV['JSON_PATH'],
         skip_upload_aab: true
     )
