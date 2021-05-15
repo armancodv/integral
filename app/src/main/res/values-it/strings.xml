@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Integral</string>
+    <string name="app_name">Integrante</string>
     <string name="category_1">Razionali</string>
     <string name="category_2">Esponenziali</string>
     <string name="category_3">Logaritmi</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Integral</string>
+    <string name="app_name">Integrante</string>
     <string name="function">Função</string>
     <string name="lower_limit">Limite inferior (a)</string>
     <string name="upper_limit">Limite Superior (b)</string>

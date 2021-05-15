@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Integral</string>
+    <string name="app_name">انتگرال</string>
     <string name="function">تابع</string>
     <string name="lower_limit">حد پایین (a)</string>
     <string name="upper_limit">حد بالا (b)</string>
