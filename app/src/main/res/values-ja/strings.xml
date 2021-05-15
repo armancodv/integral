@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Integral</string>
+    <string name="app_name">積分</string>
     <string name="function">関数</string>
     <string name="lower_limit">下限（a)</string>
     <string name="upper_limit">上限（b）</string>

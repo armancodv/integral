@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Integral</string>
+    <string name="app_name">интеграл</string>
     <string name="function">Функция</string>
     <string name="lower_limit">Нижний предел (а)</string>
     <string name="upper_limit">Верхний предел (б)</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Integral</string>
+    <string name="app_name">완전한</string>
     <string name="function">함수</string>
     <string name="lower_limit">하한 (a)</string>
     <string name="upper_limit">상한선 (b)</string>

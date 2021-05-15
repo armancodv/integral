@@ -9,3 +9,11 @@ val isPro: Boolean
         else -> false
     }
 }
+
+val isPersian: Boolean
+    get() {
+    return when (BuildConfig.FLAVOR) {
+        "persian" -> true
+        else -> false
+    }
+}
