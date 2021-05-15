@@ -40,7 +40,17 @@ Deploy a new version to the Google Play (PRO)
 ```
 fastlane android internal_pro
 ```
-Submit a new Internal Test
+Submit a new Internal Test (PRO)
+### android deploy_persian
+```
+fastlane android deploy_persian
+```
+Deploy a new version to the Google Play (PERSIAN)
+### android internal_persian
+```
+fastlane android internal_persian
+```
+Submit a new Internal Test (PERSIAN)
 ### android screenshots
 ```
 fastlane android screenshots
