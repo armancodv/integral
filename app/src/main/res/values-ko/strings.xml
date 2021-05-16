@@ -19,4 +19,9 @@
     <string name="category_9">절대 값</string>
     <string name="category_10">특별한</string>
     <string name="category_11">명확한 적분</string>
+    <string name="settings">설정</string>
+    <string name="settings_pro_version">PRO 버전</string>
+    <string name="settings_report_bug">버그 신고</string>
+    <string name="settings_rate">앱 평가</string>
+    <string name="settings_contribute">개발에 기여</string>
 </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingsItemView">
+        <attr name="settingsTitle" format="string" />
+        <attr name="settingsImage" format="reference" />
+        <attr name="settingsImageTint" format="reference" />
+    </declare-styleable>
+
+</resources>

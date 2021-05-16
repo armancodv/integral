@@ -19,4 +19,9 @@
     <string name="category_9">قيمه مطلقه</string>
     <string name="category_10">خاص</string>
     <string name="category_11">تكاملات محددة</string>
+    <string name="settings">إعدادات</string>
+    <string name="settings_pro_version">نسخة للمحترفين</string>
+    <string name="settings_report_bug">الإبلاغ عن خطأ</string>
+    <string name="settings_rate">قيم التطبيق</string>
+    <string name="settings_contribute">المساهمة في التنمية</string>
 </resources>

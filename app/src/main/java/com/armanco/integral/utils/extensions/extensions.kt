@@ -1,4 +1,4 @@
-package com.armanco.integral.extensions
+package com.armanco.integral.utils.extensions
 
 import com.armanco.integral.BuildConfig
 

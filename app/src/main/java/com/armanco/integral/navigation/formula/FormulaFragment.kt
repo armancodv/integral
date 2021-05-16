@@ -33,6 +33,7 @@ class FormulaFragment: Fragment(R.layout.fragment_formula) {
     }
 
     private fun navigateToImage(formula: Formula) {
+        model.selectImage(formula.id, formula.categoryId, getString(formula.stringRes))
         findNavController().navigate(R.id.action_formulaFragment_to_imageFragment,
             Bundle().apply {
                 putInt(IMAGE_KEY, formula.drawableRes)

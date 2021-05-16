@@ -19,4 +19,9 @@
     <string name="category_9">Mutlak değer</string>
     <string name="category_10">Özel</string>
     <string name="category_11">Belirli integraller</string>
+    <string name="settings">Ayarlar</string>
+    <string name="settings_pro_version">Profesyonel sürüm</string>
+    <string name="settings_report_bug">Hata Bildirin</string>
+    <string name="settings_rate">Uygulamayı oyla</string>
+    <string name="settings_contribute">Gelişime Katkıda Bulunun</string>
 </resources>

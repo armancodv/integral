@@ -25,6 +25,9 @@ class CategoryFragment: Fragment(R.layout.fragment_category) {
         solver?.setOnClickListener {
             navigateToSolver()
         }
+        settings?.setOnClickListener {
+            navigateToSettings()
+        }
         model.load()
         model.categories.observe(viewLifecycleOwner) { categories ->
             categoryListView?.with(categories)
@@ -32,6 +35,7 @@ class CategoryFragment: Fragment(R.layout.fragment_category) {
     }
 
     private fun navigateToItem(category: Category) {
+        model.selectCategory(category.id, getString(category.stringRes))
         Log.d("category", category.toString())
         findNavController().navigate(R.id.action_categoryFragment_to_formulaFragment,
         Bundle().apply {
@@ -42,6 +46,10 @@ class CategoryFragment: Fragment(R.layout.fragment_category) {
 
     private fun navigateToSolver() {
         findNavController().navigate(R.id.action_to_solverFragment)
+    }
+
+    private fun navigateToSettings() {
+        findNavController().navigate(R.id.action_to_settingsFragment)
     }
 
 }

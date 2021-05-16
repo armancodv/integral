@@ -19,4 +19,9 @@
     <string name="category_9">絶対値</string>
     <string name="category_10">特別</string>
     <string name="category_11">定積分</string>
+    <string name="settings">設定</string>
+    <string name="settings_pro_version">PROバージョン</string>
+    <string name="settings_report_bug">バグを報告</string>
+    <string name="settings_rate">アプリを評価する</string>
+    <string name="settings_contribute">開発に貢献する</string>
 </resources>

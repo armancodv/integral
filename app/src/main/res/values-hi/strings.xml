@@ -19,4 +19,9 @@
     <string name="category_9">निरपेक्ष मूल्य</string>
     <string name="category_10">विशेष</string>
     <string name="category_11">निश्चित अभिन्न</string>
+    <string name="settings">समायोजन</string>
+    <string name="settings_pro_version">प्रो संस्करण</string>
+    <string name="settings_report_bug">गलती सूचित करें</string>
+    <string name="settings_rate">एप्लिकेशन की श्रेणी बताओ</string>
+    <string name="settings_contribute">विकास में योगदान</string>
 </resources>

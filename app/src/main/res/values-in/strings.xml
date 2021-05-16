@@ -19,4 +19,9 @@
     <string name="category_9">Nilai mutlak</string>
     <string name="category_10">Khusus</string>
     <string name="category_11">Integral pasti</string>
+    <string name="settings">Pengaturan</string>
+    <string name="settings_pro_version">Versi PRO</string>
+    <string name="settings_report_bug">Laporkan Bug</string>
+    <string name="settings_rate">Beri Nilai Aplikasi</string>
+    <string name="settings_contribute">Berkontribusi dalam Pembangunan</string>
 </resources>

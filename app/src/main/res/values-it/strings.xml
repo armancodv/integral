@@ -19,4 +19,9 @@
     <string name="solver">Calcolatrice</string>
     <string name="method">Metodo</string>
     <string name="category_11">Integrali definiti</string>
+    <string name="settings">Impostazioni</string>
+    <string name="settings_pro_version">Versione PRO</string>
+    <string name="settings_report_bug">Segnalare un bug</string>
+    <string name="settings_rate">Valuta l\'app</string>
+    <string name="settings_contribute">Contribuisci allo sviluppo</string>
 </resources>

@@ -6,23 +6,30 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.armanco.integral.extensions.isPersian
-import com.armanco.integral.extensions.isPro
-import com.armanco.integral.extensions.setLocale
+import com.armanco.integral.utils.extensions.isPersian
+import com.armanco.integral.utils.extensions.isPro
+import com.armanco.integral.utils.extensions.setLocale
+import com.armanco.integral.utils.facade.EventFacade
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity: AppCompatActivity() {
+
+    @Inject
+    lateinit var eventFacade: EventFacade
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         if(!isPro) initAdMob()
         else removeAdMob()
         initToolbar()
+        eventFacade.init(this)
     }
 
     override fun onResume() {

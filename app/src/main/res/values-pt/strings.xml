@@ -19,4 +19,9 @@
     <string name="category_9">Valor absoluto</string>
     <string name="category_10">Especial</string>
     <string name="category_11">Integrais definidos</string>
+    <string name="settings">Definições</string>
+    <string name="settings_pro_version">Versão PRO</string>
+    <string name="settings_report_bug">Reportar um erro</string>
+    <string name="settings_rate">Avalie o aplicativo</string>
+    <string name="settings_contribute">Contribua no Desenvolvimento</string>
 </resources>

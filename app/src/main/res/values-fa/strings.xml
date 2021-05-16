@@ -19,4 +19,9 @@
     <string name="category_9">قدر مطلق</string>
     <string name="category_10">خاص</string>
     <string name="category_11">انتگرال های مشخص</string>
+    <string name="settings">تنظیمات</string>
+    <string name="settings_pro_version">نسخه PRO</string>
+    <string name="settings_report_bug">گزارش یک اشکال</string>
+    <string name="settings_rate">نمره دادن به اپلیکیشن</string>
+    <string name="settings_contribute">کمک به توسعه</string>
 </resources>

@@ -19,4 +19,9 @@
     <string name="calculate">حساب لگائیں</string>
     <string name="solver">کیلکولیٹر</string>
     <string name="method">طریقہ</string>
+    <string name="settings">ترتیبات</string>
+    <string name="settings_pro_version">پی ار او ورژن</string>
+    <string name="settings_report_bug">بگ کی اطلاع دیں</string>
+    <string name="settings_rate">ایپ کی درجہ بندی کریں</string>
+    <string name="settings_contribute">ترقی میں تعاون کریں</string>
 </resources>
