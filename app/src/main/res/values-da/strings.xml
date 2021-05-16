@@ -19,4 +19,9 @@
     <string name="calculate">Beregn</string>
     <string name="solver">Lommeregner</string>
     <string name="method">Metode</string>
+    <string name="settings">Indstillinger</string>
+    <string name="settings_pro_version">PRO-version</string>
+    <string name="settings_report_bug">Anmeld en fejl</string>
+    <string name="settings_rate">Bedøm appen</string>
+    <string name="settings_contribute">Bidrag i udvikling</string>
 </resources>

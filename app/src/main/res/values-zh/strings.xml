@@ -19,4 +19,9 @@
     <string name="category_9">绝对值</string>
     <string name="category_10">特别的</string>
     <string name="category_11">定积分</string>
+    <string name="settings">设定值</string>
+    <string name="settings_pro_version">专业版</string>
+    <string name="settings_report_bug">报告错误</string>
+    <string name="settings_rate">评价应用程序</string>
+    <string name="settings_contribute">促进发展</string>
 </resources>

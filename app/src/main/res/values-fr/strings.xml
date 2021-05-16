@@ -19,4 +19,9 @@
     <string name="calculate">Calculer</string>
     <string name="solver">Calculatrice</string>
     <string name="method">Méthode</string>
+    <string name="settings">Paramètres</string>
+    <string name="settings_pro_version">Version PRO</string>
+    <string name="settings_report_bug">Signaler un bug</string>
+    <string name="settings_rate">Évaluer l\'application</string>
+    <string name="settings_contribute">Contribuer au développement</string>
 </resources>

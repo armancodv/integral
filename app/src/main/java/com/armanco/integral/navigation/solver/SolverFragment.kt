@@ -15,6 +15,7 @@ class SolverFragment: Fragment(R.layout.fragment_solver) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        model.load()
         initValues()
         calculate?.setOnClickListener {
             model.calculate()

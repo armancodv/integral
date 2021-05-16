@@ -260,4 +260,10 @@
     <string name="solver_function_info" translatable="false">+, -, *, /, ^, (, ), sin, cos, sinh, cosh, tan, tanh, asin, acos, atan, e, pi, ln, log, sqrt, cbrt</string>
     <string name="method">Method</string>
 
+    <string name="settings">Settings</string>
+    <string name="settings_pro_version">PRO Version</string>
+    <string name="settings_report_bug">Report a Bug</string>
+    <string name="settings_rate">Rate the App</string>
+    <string name="settings_contribute">Contribute in Development</string>
+
 </resources>

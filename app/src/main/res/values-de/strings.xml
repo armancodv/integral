@@ -19,4 +19,9 @@
     <string name="category_9">Absolutwert</string>
     <string name="category_10">Besondere</string>
     <string name="category_11">Bestimmte Integrale</string>
+    <string name="settings">die Einstellungen</string>
+    <string name="settings_pro_version">Pro-Version</string>
+    <string name="settings_report_bug">Melde einen technischen Fehler</string>
+    <string name="settings_rate">Bewerten Sie die App</string>
+    <string name="settings_contribute">Beitrag zur Entwicklung</string>
 </resources>

@@ -89,6 +89,12 @@ dependencies {
     // over scroll
     implementation 'me.everything:overscroll-decor-android:1.1.0'
 
+    // ripple
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    // google play
+    implementation 'com.google.android.play:core:1.10.0'
+
     // firebase
     implementation platform('com.google.firebase:firebase-bom:26.8.0')
     implementation 'com.google.firebase:firebase-crashlytics-ktx'

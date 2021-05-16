@@ -3,6 +3,7 @@ package com.armanco.integral
 import android.content.Context
 import androidx.room.Room
 import com.armanco.integral.managers.db.Db
+import com.armanco.integral.utils.facade.EventFacade
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -31,4 +32,8 @@ object AppModule {
     @Singleton
     @Provides
     fun provideItemDao(db: Db) = db.formulaDao()
+
+    @Singleton
+    @Provides
+    fun provideEventFacade() = EventFacade()
 }

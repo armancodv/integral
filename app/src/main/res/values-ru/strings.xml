@@ -19,4 +19,9 @@
     <string name="category_9">Абсолютная величина</string>
     <string name="category_10">Специальный</string>
     <string name="category_11">Определенные интегралы</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_pro_version">ПРО версия</string>
+    <string name="settings_report_bug">Сообщить об ошибке</string>
+    <string name="settings_rate">Оцените приложение</string>
+    <string name="settings_contribute">Содействовать развитию</string>
 </resources>

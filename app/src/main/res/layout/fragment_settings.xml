@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.armanco.integral.view.component.SettingsItemView
+                android:id="@+id/proVersion"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_pro_version"
+                app:settingsImage="@drawable/ic_baseline_star_24"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.view.component.SettingsItemView
+                android:id="@+id/reportBug"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_report_bug"
+                app:settingsImage="@drawable/ic_baseline_bug_report_24"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.view.component.SettingsItemView
+                android:id="@+id/contribute"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_contribute"
+                app:settingsImage="@drawable/ic_baseline_developer_mode_24"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.view.component.SettingsItemView
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_rate"
+                app:settingsImage="@drawable/ic_baseline_insert_emoticon_24"
+                app:settingsImageTint="@color/primary"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

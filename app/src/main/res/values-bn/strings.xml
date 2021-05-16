@@ -19,4 +19,9 @@
     <string name="category_9">পরম-মান</string>
     <string name="category_10">বিশেষ</string>
     <string name="category_11">চূড়ান্ত সংহত</string>
+    <string name="settings">সেটিংস</string>
+    <string name="settings_pro_version">প্রো সংস্করণ</string>
+    <string name="settings_report_bug">একটি বাগ রিপোর্ট করুন</string>
+    <string name="settings_rate">অ্যাপ্লিকেশন রেট</string>
+    <string name="settings_contribute">উন্নয়নে অবদান রাখুন</string>
 </resources>
