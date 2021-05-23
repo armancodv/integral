@@ -24,4 +24,6 @@
     <string name="settings_report_bug">Сообщить об ошибке</string>
     <string name="settings_rate">Оцените приложение</string>
     <string name="settings_contribute">Содействовать развитию</string>
+    <string name="settings_privacy">Политика конфиденциальности</string>
+    <string name="settings_terms">Условия и положения</string>
 </resources>

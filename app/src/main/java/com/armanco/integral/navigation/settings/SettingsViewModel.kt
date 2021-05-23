@@ -2,18 +2,19 @@ package com.armanco.integral.navigation.settings
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.armanco.integral.managers.repository.FormulaRepository
-import com.armanco.integral.models.Formula
+import com.armanco.integral.utils.extensions.configLinks
 import com.armanco.integral.utils.facade.EventFacade
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
-    private val eventFacade: EventFacade
+    private val eventFacade: EventFacade,
+    private val remoteConfig: FirebaseRemoteConfig,
 ): ViewModel() {
+
+    var configLinks = MutableLiveData(remoteConfig.configLinks)
 
     fun load() {
         eventFacade.screenView(SettingsFragment::class.java.simpleName)
@@ -29,6 +30,14 @@ class SettingsViewModel @Inject constructor(
 
     fun selectContribute() {
         eventFacade.selectContribute()
+    }
+
+    fun selectPrivacy() {
+        eventFacade.selectPrivacy()
+    }
+
+    fun selectTerms() {
+        eventFacade.selectTerms()
     }
 
     fun selectRate() {

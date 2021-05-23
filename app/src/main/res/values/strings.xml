@@ -265,5 +265,7 @@
     <string name="settings_report_bug">Report a Bug</string>
     <string name="settings_rate">Rate the App</string>
     <string name="settings_contribute">Contribute in Development</string>
+    <string name="settings_privacy" >"Privacy policy "</string>
+    <string name="settings_terms" >Terms and conditions</string>
 
 </resources>

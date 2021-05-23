@@ -1,5 +1,6 @@
-package com.armanco.integral.navigation.image
+package com.armanco.integral
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.armanco.integral.utils.extensions.configAds
@@ -9,12 +10,13 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class ImageViewModel @Inject constructor(
+class MainViewModel @Inject constructor(
     private val eventFacade: EventFacade,
-    private val remoteConfig: FirebaseRemoteConfig,
-) : ViewModel() {
+    val remoteConfig: FirebaseRemoteConfig,
+): ViewModel() {
     var configAds = MutableLiveData(remoteConfig.configAds)
-    fun load() {
-        eventFacade.screenView(ImageFragment::class.java.simpleName)
+
+    fun initEvents(context: Context) {
+        eventFacade.init(context)
     }
 }

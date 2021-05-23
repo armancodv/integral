@@ -24,4 +24,6 @@
     <string name="settings_report_bug">بگ کی اطلاع دیں</string>
     <string name="settings_rate">ایپ کی درجہ بندی کریں</string>
     <string name="settings_contribute">ترقی میں تعاون کریں</string>
+    <string name="settings_privacy">رازداری کی پالیسی</string>
+    <string name="settings_terms">شرائط و ضوابط</string>
 </resources>

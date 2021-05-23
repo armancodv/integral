@@ -77,6 +77,20 @@ class EventFacade {
         ))
     }
 
+    fun selectPrivacy() {
+        firebaseAnalytics?.logEvent(Event.SELECT_PRIVACY, bundleOf(
+            Param.LANGUAGE to context?.currentLanguage,
+            Param.COUNTRY to context?.currentCountry,
+        ))
+    }
+
+    fun selectTerms() {
+        firebaseAnalytics?.logEvent(Event.SELECT_TERMS, bundleOf(
+            Param.LANGUAGE to context?.currentLanguage,
+            Param.COUNTRY to context?.currentCountry,
+        ))
+    }
+
     fun selectRate() {
         firebaseAnalytics?.logEvent(Event.SELECT_RATE, bundleOf(
             Param.LANGUAGE to context?.currentLanguage,
@@ -100,6 +114,8 @@ class EventFacade {
             const val SELECT_PRO_VERSION = "select_pro_version"
             const val SELECT_REPORT_BUG = "select_report_bug"
             const val SELECT_CONTRIBUTE = "select_contribute"
+            const val SELECT_PRIVACY = "select_privacy"
+            const val SELECT_TERMS = "select_terms"
             const val SELECT_RATE = "select_rate"
             const val SUBMIT_RATE = "submit_rate"
         }

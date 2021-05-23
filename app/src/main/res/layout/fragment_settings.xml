@@ -47,6 +47,22 @@
                 app:settingsImage="@drawable/ic_baseline_insert_emoticon_24"
                 app:settingsImageTint="@color/primary"/>
 
+            <com.armanco.integral.view.component.SettingsItemView
+                android:id="@+id/privacy"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_privacy"
+                app:settingsImage="@drawable/ic_baseline_privacy_tip_24"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.view.component.SettingsItemView
+                android:id="@+id/terms"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_terms"
+                app:settingsImage="@drawable/ic_baseline_text_snippet_24"
+                app:settingsImageTint="@color/primary"/>
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </ScrollView>
