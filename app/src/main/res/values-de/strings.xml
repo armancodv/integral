@@ -24,4 +24,6 @@
     <string name="settings_report_bug">Melde einen technischen Fehler</string>
     <string name="settings_rate">Bewerten Sie die App</string>
     <string name="settings_contribute">Beitrag zur Entwicklung</string>
+    <string name="settings_privacy">Datenschutz-Bestimmungen</string>
+    <string name="settings_terms">Geschäftsbedingungen</string>
 </resources>

@@ -24,4 +24,6 @@
     <string name="settings_report_bug">Hata Bildirin</string>
     <string name="settings_rate">Uygulamayı oyla</string>
     <string name="settings_contribute">Gelişime Katkıda Bulunun</string>
+    <string name="settings_privacy">Gizlilik Politikası</string>
+    <string name="settings_terms">Şartlar ve koşullar</string>
 </resources>

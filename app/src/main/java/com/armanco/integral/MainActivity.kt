@@ -1,35 +1,41 @@
 package com.armanco.integral
 
 import android.os.Bundle
-import android.view.View
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
+import com.armanco.integral.utils.extensions.configAds
 import com.armanco.integral.utils.extensions.isPersian
 import com.armanco.integral.utils.extensions.isPro
 import com.armanco.integral.utils.extensions.setLocale
-import com.armanco.integral.utils.facade.EventFacade
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
-import javax.inject.Inject
+
 
 @AndroidEntryPoint
 class MainActivity: AppCompatActivity() {
 
-    @Inject
-    lateinit var eventFacade: EventFacade
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        if(!isPro) initAdMob()
-        else removeAdMob()
+        val model: MainViewModel by viewModels()
+        model.initEvents(this)
+        model.configAds.observe(this) {
+            if(!isPro) initAdMob(it?.bannerId)
+            else removeAdMob()
+        }
+        model.remoteConfig.fetchAndActivate().addOnCompleteListener(this) {
+            model.configAds.postValue(model.remoteConfig.configAds)
+        }
+
         initToolbar()
-        eventFacade.init(this)
     }
 
     override fun onResume() {
@@ -39,14 +45,21 @@ class MainActivity: AppCompatActivity() {
         }
     }
 
-    private fun initAdMob() {
+    private fun initAdMob(bannerId: String?) {
         MobileAds.initialize(this)
-        val adRequest = AdRequest.Builder().build()
-        adView?.loadAd(adRequest)
+        removeAdMob()
+        val adView = AdView(this)
+        adView.adSize = AdSize.BANNER
+        adView.adUnitId = bannerId
+        if (adView.adSize != null && adView.adUnitId != null) {
+            val adRequest = AdRequest.Builder().build()
+            adView.loadAd(adRequest)
+            adContainer?.addView(adView)
+        }
     }
 
     private fun removeAdMob() {
-        adView?.visibility = View.GONE
+        adContainer?.removeAllViews()
     }
 
     private fun initToolbar() {

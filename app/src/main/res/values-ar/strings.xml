@@ -24,4 +24,6 @@
     <string name="settings_report_bug">الإبلاغ عن خطأ</string>
     <string name="settings_rate">قيم التطبيق</string>
     <string name="settings_contribute">المساهمة في التنمية</string>
+    <string name="settings_privacy">سياسة خاصة</string>
+    <string name="settings_terms">الأحكام والشروط</string>
 </resources>

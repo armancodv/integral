@@ -8,7 +8,8 @@ import com.armanco.integral.R
 import com.armanco.integral.utils.extensions.isPro
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.gms.ads.LoadAdError
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_image.*
@@ -22,24 +23,29 @@ class ImageFragment: Fragment(R.layout.fragment_image) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         model.load()
-        if(!isPro) showInterstitialAd()
+        model.configAds.observe(viewLifecycleOwner) {
+            if(!isPro) showInterstitialAd(model.configAds.value?.interstitialId)
+        }
         arguments?.getInt(IMAGE_KEY)?.let { photoView?.setImageResource(it) }
     }
 
-    private fun showInterstitialAd() {
-        mInterstitialAd = InterstitialAd(activity)
-        mInterstitialAd?.adUnitId = "ca-app-pub-4301546764905932/6653178697"
-        val adRequest = AdRequest.Builder().build()
-        mInterstitialAd?.loadAd(adRequest)
-        mInterstitialAd?.adListener = object : AdListener() {
-            override fun onAdLoaded() {
-                mInterstitialAd?.show()
-            }
-            override fun onAdFailedToLoad(adError: LoadAdError) {}
-            override fun onAdOpened() {}
-            override fun onAdClicked() {}
-            override fun onAdLeftApplication() {}
-            override fun onAdClosed() {}
+    private fun showInterstitialAd(interstitialId: String?) {
+        if (activity != null && interstitialId != null) {
+            val adRequest = AdRequest.Builder().build()
+            InterstitialAd.load(
+                requireContext(),
+                interstitialId,
+                adRequest,
+                object : InterstitialAdLoadCallback() {
+                    override fun onAdFailedToLoad(adError: LoadAdError) {
+                        mInterstitialAd = null
+                    }
+
+                    override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                        mInterstitialAd = interstitialAd
+                        mInterstitialAd?.show(activity!!)
+                    }
+                })
         }
     }
 

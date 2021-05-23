@@ -24,4 +24,6 @@
     <string name="settings_report_bug">गलती सूचित करें</string>
     <string name="settings_rate">एप्लिकेशन की श्रेणी बताओ</string>
     <string name="settings_contribute">विकास में योगदान</string>
+    <string name="settings_privacy">गोपनीयता नीति</string>
+    <string name="settings_terms">नियम और शर्तें</string>
 </resources>

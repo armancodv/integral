@@ -24,4 +24,6 @@
     <string name="settings_report_bug">버그 신고</string>
     <string name="settings_rate">앱 평가</string>
     <string name="settings_contribute">개발에 기여</string>
+    <string name="settings_privacy">개인 정보 정책</string>
+    <string name="settings_terms">이용 약관</string>
 </resources>

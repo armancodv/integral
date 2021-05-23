@@ -24,4 +24,6 @@
     <string name="settings_report_bug">Anmeld en fejl</string>
     <string name="settings_rate">Bedøm appen</string>
     <string name="settings_contribute">Bidrag i udvikling</string>
+    <string name="settings_privacy">Fortrolighedspolitik</string>
+    <string name="settings_terms">Vilkår og betingelser</string>
 </resources>

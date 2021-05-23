@@ -24,4 +24,6 @@
     <string name="settings_report_bug">একটি বাগ রিপোর্ট করুন</string>
     <string name="settings_rate">অ্যাপ্লিকেশন রেট</string>
     <string name="settings_contribute">উন্নয়নে অবদান রাখুন</string>
+    <string name="settings_privacy">গোপনীয়তা নীতি</string>
+    <string name="settings_terms">শর্তাবলী</string>
 </resources>

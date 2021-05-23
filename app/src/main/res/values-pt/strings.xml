@@ -24,4 +24,6 @@
     <string name="settings_report_bug">Reportar um erro</string>
     <string name="settings_rate">Avalie o aplicativo</string>
     <string name="settings_contribute">Contribua no Desenvolvimento</string>
+    <string name="settings_privacy">Política de Privacidade</string>
+    <string name="settings_terms">Termos e Condições</string>
 </resources>

@@ -24,4 +24,6 @@
     <string name="settings_report_bug">گزارش یک اشکال</string>
     <string name="settings_rate">نمره دادن به اپلیکیشن</string>
     <string name="settings_contribute">کمک به توسعه</string>
+    <string name="settings_privacy">سیاست حفظ حریم خصوصی</string>
+    <string name="settings_terms">شرایط و ضوابط</string>
 </resources>
