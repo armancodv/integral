@@ -26,4 +26,5 @@
     <string name="settings_contribute">Gelişime Katkıda Bulunun</string>
     <string name="settings_privacy">Gizlilik Politikası</string>
     <string name="settings_terms">Şartlar ve koşullar</string>
+    <string name="category">formül</string>
 </resources>

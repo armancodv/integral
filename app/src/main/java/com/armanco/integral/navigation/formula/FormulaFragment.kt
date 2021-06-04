@@ -22,9 +22,6 @@ class FormulaFragment: Fragment(R.layout.fragment_formula) {
         formulaListView?.onCardClick = {
             navigateToImage(it)
         }
-        solver?.setOnClickListener {
-            navigateToSolver()
-        }
         model.load(arguments?.getInt(ID_KEY))
         model.formulas.observe(viewLifecycleOwner) { formulas ->
             Log.d("formula", formulas.toString())
@@ -39,10 +36,6 @@ class FormulaFragment: Fragment(R.layout.fragment_formula) {
                 putInt(IMAGE_KEY, formula.drawableRes)
                 putString(ImageFragment.TITLE_KEY, getString(formula.stringRes))
             })
-    }
-
-    private fun navigateToSolver() {
-        findNavController().navigate(R.id.action_to_solverFragment)
     }
 
     companion object {

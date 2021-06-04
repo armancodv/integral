@@ -26,4 +26,5 @@
     <string name="settings_contribute">Beitrag zur Entwicklung</string>
     <string name="settings_privacy">Datenschutz-Bestimmungen</string>
     <string name="settings_terms">Geschäftsbedingungen</string>
+    <string name="category">Formel</string>
 </resources>
