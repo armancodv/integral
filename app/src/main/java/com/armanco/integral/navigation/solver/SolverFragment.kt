@@ -8,6 +8,7 @@ import androidx.fragment.app.viewModels
 import com.armanco.integral.R
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_solver.*
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 
 @AndroidEntryPoint
 class SolverFragment: Fragment(R.layout.fragment_solver) {
@@ -19,6 +20,9 @@ class SolverFragment: Fragment(R.layout.fragment_solver) {
         initValues()
         calculate?.setOnClickListener {
             model.calculate()
+        }
+        scrollView?.let {
+            OverScrollDecoratorHelper.setUpOverScroll(it)
         }
         function?.addTextChangedListener {
             model.function.value = it?.toString()

@@ -267,5 +267,6 @@
     <string name="settings_contribute">Contribute in Development</string>
     <string name="settings_privacy" >"Privacy policy "</string>
     <string name="settings_terms" >Terms and conditions</string>
+    <string name="category">Formula</string>
 
 </resources>

@@ -26,4 +26,5 @@
     <string name="settings_contribute">Contribuer au développement</string>
     <string name="settings_privacy">Politique de confidentialité</string>
     <string name="settings_terms">Termes et conditions</string>
+    <string name="category">Formule</string>
 </resources>

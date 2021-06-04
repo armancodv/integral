@@ -62,19 +62,5 @@
         android:name="com.armanco.integral.navigation.settings.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
-    <action
-        android:id="@+id/action_to_solverFragment"
-        app:destination="@id/solverFragment"
-        app:enterAnim="@anim/slide_in_right"
-        app:exitAnim="@anim/slide_no"
-        app:popEnterAnim="@anim/slide_no"
-        app:popExitAnim="@anim/slide_out_right" />
-    <action
-        android:id="@+id/action_to_settingsFragment"
-        app:destination="@id/settingsFragment"
-        app:enterAnim="@anim/slide_in_right"
-        app:exitAnim="@anim/slide_no"
-        app:popEnterAnim="@anim/slide_no"
-        app:popExitAnim="@anim/slide_out_right" />
 
 </navigation>

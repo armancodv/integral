@@ -12,6 +12,7 @@ import com.armanco.integral.utils.extensions.isPro
 import com.armanco.integral.utils.facade.ReviewFacade
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_settings.*
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 
 @AndroidEntryPoint
 class SettingsFragment: Fragment(R.layout.fragment_settings) {
@@ -25,6 +26,9 @@ class SettingsFragment: Fragment(R.layout.fragment_settings) {
         model.load()
         reviewFacade.init(context)
         proVersion?.visibility = if(isPro) View.GONE else View.VISIBLE
+        scrollView?.let {
+            OverScrollDecoratorHelper.setUpOverScroll(it)
+        }
         proVersion?.onClick = {
             model.selectProVersion()
             activity?.goToGooglePlay(model.configLinks.value?.proPackageName ?: ConfigLinks.PRO_PACKAGE_NAME_DEFAULT)
