@@ -11,6 +11,11 @@
         android:title="@string/solver" />
 
     <item
+        android:id="@+id/plotFragment"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="@string/plot" />
+
+    <item
         android:id="@+id/settingsFragment"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="@string/settings" />

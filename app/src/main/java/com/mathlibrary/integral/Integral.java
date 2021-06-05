@@ -28,6 +28,16 @@ public class Integral {
     }
 
     /**
+     * Integral
+     *
+     * @param f_x
+     * @param degree
+     */
+    public Integral(final String f_x, final boolean degree) {
+        this.f_x = new FunctionX(f_x, degree);
+    }
+
+    /**
      * 
      * Trapezoidal
      * 

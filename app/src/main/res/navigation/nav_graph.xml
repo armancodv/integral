@@ -58,6 +58,11 @@
         android:label="@string/solver"
         tools:layout="@layout/fragment_solver" />
     <fragment
+        android:id="@+id/plotFragment"
+        android:name="com.armanco.integral.navigation.plot.PlotFragment"
+        android:label="@string/plot"
+        tools:layout="@layout/fragment_plot" />
+    <fragment
         android:id="@+id/settingsFragment"
         android:name="com.armanco.integral.navigation.settings.SettingsFragment"
         android:label="@string/settings"

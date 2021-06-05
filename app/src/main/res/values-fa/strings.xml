@@ -27,4 +27,8 @@
     <string name="settings_privacy">سیاست حفظ حریم خصوصی</string>
     <string name="settings_terms">شرایط و ضوابط</string>
     <string name="category">فرمول</string>
+    <string name="plot">طرح</string>
+    <string name="integral">انتگرال</string>
+    <string name="form">فرم</string>
+    <string name="chart">چارت سازمانی</string>
 </resources>

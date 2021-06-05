@@ -105,6 +105,9 @@ dependencies {
     // json
     implementation 'com.google.code.gson:gson:2.8.6'
 
+    // plot
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test:rules:1.3.0'

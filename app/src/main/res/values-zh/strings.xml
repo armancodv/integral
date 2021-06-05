@@ -27,4 +27,8 @@
     <string name="settings_privacy">隐私政策</string>
     <string name="settings_terms">条款和条件</string>
     <string name="category">公式</string>
+    <string name="plot">阴谋</string>
+    <string name="integral">不可缺少的</string>
+    <string name="form">形式</string>
+    <string name="chart">图表</string>
 </resources>

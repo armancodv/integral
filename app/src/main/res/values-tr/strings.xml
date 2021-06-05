@@ -27,4 +27,8 @@
     <string name="settings_privacy">Gizlilik Politikası</string>
     <string name="settings_terms">Şartlar ve koşullar</string>
     <string name="category">formül</string>
+    <string name="plot">Arsa</string>
+    <string name="integral">integral</string>
+    <string name="form">Form</string>
+    <string name="chart">Grafik</string>
 </resources>

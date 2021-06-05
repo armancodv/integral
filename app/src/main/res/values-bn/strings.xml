@@ -27,4 +27,8 @@
     <string name="settings_privacy">গোপনীয়তা নীতি</string>
     <string name="settings_terms">শর্তাবলী</string>
     <string name="category">সূত্র</string>
+    <string name="plot">পটভূমি</string>
+    <string name="integral">ইন্টিগ্রাল</string>
+    <string name="form">ফর্ম</string>
+    <string name="chart">চার্ট</string>
 </resources>

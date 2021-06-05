@@ -56,6 +56,17 @@ class EventFacade {
         ))
     }
 
+    fun plot(function: String?, lowerLimit: Double?, upperLimit: Double?, steps: Int?) {
+        firebaseAnalytics?.logEvent(Event.PLOT, bundleOf(
+            Param.FUNCTION to function,
+            Param.LOWER_LIMIT to lowerLimit.toString(),
+            Param.UPPER_LIMIT to upperLimit.toString(),
+            Param.STEPS to steps.toString(),
+            Param.LANGUAGE to context?.currentLanguage,
+            Param.COUNTRY to context?.currentCountry,
+        ))
+    }
+
     fun selectProVersion() {
         firebaseAnalytics?.logEvent(Event.SELECT_PRO_VERSION, bundleOf(
             Param.LANGUAGE to context?.currentLanguage,
@@ -111,6 +122,7 @@ class EventFacade {
             const val SELECT_CATEGORY = "select_category"
             const val SELECT_IMAGE = "select_image"
             const val CALCULATE = "calculate"
+            const val PLOT = "plot"
             const val SELECT_PRO_VERSION = "select_pro_version"
             const val SELECT_REPORT_BUG = "select_report_bug"
             const val SELECT_CONTRIBUTE = "select_contribute"

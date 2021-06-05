@@ -27,4 +27,8 @@
     <string name="settings_privacy">Datenschutz-Bestimmungen</string>
     <string name="settings_terms">Geschäftsbedingungen</string>
     <string name="category">Formel</string>
+    <string name="plot">Handlung</string>
+    <string name="integral">Integral</string>
+    <string name="form">Bilden</string>
+    <string name="chart">Diagramm</string>
 </resources>
