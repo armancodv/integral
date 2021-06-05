@@ -36,18 +36,8 @@ class SolverFragment: Fragment(R.layout.fragment_solver) {
         steps?.addTextChangedListener {
             model.steps.value = it?.toString()?.toIntOrNull() ?: 1
         }
-        trapezoidal?.setOnCheckedChangeListener { _, isChecked ->
-            if(isChecked) model.setMethod(SolverViewModel.Companion.Method.Trapezoidal)
-        }
-        simpson?.setOnCheckedChangeListener { _, isChecked ->
-            if(isChecked) model.setMethod(SolverViewModel.Companion.Method.Simpson)
-        }
-        romberg?.setOnCheckedChangeListener { _, isChecked ->
-            if(isChecked) model.setMethod(SolverViewModel.Companion.Method.Romberg)
-        }
         model.hasSteps.observe(viewLifecycleOwner) { hasSteps ->
             steps?.visibility = if(hasSteps) View.VISIBLE else View.GONE
-            stepsTitle?.visibility = if(hasSteps) View.VISIBLE else View.GONE
         }
         model.result.observe(viewLifecycleOwner) { res ->
             result?.text = res?.toString()
@@ -59,10 +49,5 @@ class SolverFragment: Fragment(R.layout.fragment_solver) {
         lowerLimit?.setText(model.lowerLimit.value.toString())
         upperLimit?.setText(model.upperLimit.value.toString())
         steps?.setText(model.steps.value.toString())
-        when(model.method.value) {
-            SolverViewModel.Companion.Method.Trapezoidal -> trapezoidal?.isChecked = true
-            SolverViewModel.Companion.Method.Simpson -> simpson?.isChecked = true
-            SolverViewModel.Companion.Method.Romberg -> romberg?.isChecked = true
-        }
     }
 }

@@ -27,4 +27,8 @@
     <string name="settings_privacy">Политика конфиденциальности</string>
     <string name="settings_terms">Условия и положения</string>
     <string name="category">Формула</string>
+    <string name="plot">Сюжет</string>
+    <string name="integral">интеграл</string>
+    <string name="form">Форма</string>
+    <string name="chart">Диаграмма</string>
 </resources>

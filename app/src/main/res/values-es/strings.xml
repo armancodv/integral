@@ -27,4 +27,8 @@
     <string name="settings_privacy">Política de privacidad</string>
     <string name="settings_terms">Términos y condiciones</string>
     <string name="category">Fórmula</string>
+    <string name="plot">Gráfico</string>
+    <string name="integral">Integral</string>
+    <string name="form">Formulario</string>
+    <string name="chart">Gráfico</string>
 </resources>

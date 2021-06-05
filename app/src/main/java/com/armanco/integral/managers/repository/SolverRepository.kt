@@ -7,7 +7,7 @@ class SolverRepository @Inject constructor() {
 
     fun trapezoidal(f: String, lowerLimit: Double, upperLimit: Double): Double? {
         return try {
-            val integral = Integral(f)
+            val integral = Integral(f, false)
             integral.trapezoidal(lowerLimit, upperLimit)
         } catch (e: Exception) {
             null
@@ -16,7 +16,7 @@ class SolverRepository @Inject constructor() {
 
     fun simpson(f: String, lowerLimit: Double, upperLimit: Double): Double? {
         return try {
-            val integral = Integral(f)
+            val integral = Integral(f, false)
             integral.simpson(lowerLimit, upperLimit)
         } catch (e: Exception) {
             null
@@ -25,7 +25,7 @@ class SolverRepository @Inject constructor() {
 
     fun romberg(f: String, lowerLimit: Double, upperLimit: Double, steps: Int): Double? {
         return try {
-            val integral = Integral(f)
+            val integral = Integral(f, false)
             integral.Romberg(lowerLimit, upperLimit, steps)
         } catch (e: Exception) {
             null

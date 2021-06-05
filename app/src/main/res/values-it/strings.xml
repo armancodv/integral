@@ -27,4 +27,8 @@
     <string name="settings_privacy">Politica sulla riservatezza</string>
     <string name="settings_terms">Termini e Condizioni</string>
     <string name="category">Formula</string>
+    <string name="plot">Tracciare</string>
+    <string name="integral">Integrante</string>
+    <string name="form">Modulo</string>
+    <string name="chart">Grafico</string>
 </resources>

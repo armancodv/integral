@@ -13,9 +13,9 @@ class SolverViewModel @Inject constructor(
     private val eventFacade: EventFacade
 ): ViewModel() {
     val result = MutableLiveData<Double?>()
-    val method = MutableLiveData(Method.Simpson)
-    val hasSteps = MutableLiveData(false)
-    val function = MutableLiveData("2*x^2+sin(x)+1")
+    val method = MutableLiveData(Method.Romberg)
+    val hasSteps = MutableLiveData(true)
+    val function = MutableLiveData("sin(x)")
     val steps = MutableLiveData(1)
     val lowerLimit = MutableLiveData(0.0)
     val upperLimit = MutableLiveData(1.0)

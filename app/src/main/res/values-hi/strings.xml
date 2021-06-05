@@ -27,4 +27,8 @@
     <string name="settings_privacy">गोपनीयता नीति</string>
     <string name="settings_terms">नियम और शर्तें</string>
     <string name="category">सूत्र</string>
+    <string name="plot">भूखंड</string>
+    <string name="integral">अविभाज्य</string>
+    <string name="form">प्रपत्र</string>
+    <string name="chart">चार्ट</string>
 </resources>

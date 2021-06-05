@@ -268,5 +268,9 @@
     <string name="settings_privacy" >"Privacy policy "</string>
     <string name="settings_terms" >Terms and conditions</string>
     <string name="category">Formula</string>
+    <string name="plot">Plot</string>
+    <string name="integral">Integral</string>
+    <string name="form">Form</string>
+    <string name="chart">Chart</string>
 
 </resources>

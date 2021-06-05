@@ -27,4 +27,8 @@
     <string name="settings_privacy">Kebijakan pribadi</string>
     <string name="settings_terms">Syarat dan Ketentuan</string>
     <string name="category">Rumus</string>
+    <string name="plot">Merencanakan</string>
+    <string name="integral">Integral</string>
+    <string name="form">Untuk m</string>
+    <string name="chart">Grafik</string>
 </resources>

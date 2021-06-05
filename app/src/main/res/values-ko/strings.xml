@@ -27,4 +27,8 @@
     <string name="settings_privacy">개인 정보 정책</string>
     <string name="settings_terms">이용 약관</string>
     <string name="category">공식</string>
+    <string name="plot">음모</string>
+    <string name="integral">완전한</string>
+    <string name="form">형태</string>
+    <string name="chart">차트</string>
 </resources>

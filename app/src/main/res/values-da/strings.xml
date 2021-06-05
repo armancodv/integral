@@ -27,4 +27,8 @@
     <string name="settings_privacy">Fortrolighedspolitik</string>
     <string name="settings_terms">Vilkår og betingelser</string>
     <string name="category">Formel</string>
+    <string name="plot">Grund</string>
+    <string name="integral">Integreret</string>
+    <string name="form">Form</string>
+    <string name="chart">Diagram</string>
 </resources>

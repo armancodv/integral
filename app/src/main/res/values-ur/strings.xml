@@ -27,4 +27,8 @@
     <string name="settings_privacy">رازداری کی پالیسی</string>
     <string name="settings_terms">شرائط و ضوابط</string>
     <string name="category">فارمولا</string>
+    <string name="plot">پلاٹ</string>
+    <string name="integral">لازمی</string>
+    <string name="form">فارم</string>
+    <string name="chart">چارٹ</string>
 </resources>
