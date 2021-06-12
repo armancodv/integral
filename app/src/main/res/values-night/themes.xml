@@ -51,4 +51,12 @@
         <item name="android:background">@color/darkBg</item>
     </style>
 
+    <style name="SplashTheme" parent="Theme.Integral">
+        <item name="android:windowBackground">@color/primaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
 </resources>

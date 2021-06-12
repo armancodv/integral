@@ -31,4 +31,13 @@
     <string name="integral">متكامل</string>
     <string name="form">استمارة</string>
     <string name="chart">جدول</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="login_or_register">دخولتسجيل</string>
+    <string name="settings_delete">مسح المستخدم</string>
+    <string name="settings_logout">تسجيل خروج</string>
+    <string name="formula">معادلة</string>
+    <string name="ad_view">عرض الإعلان</string>
+    <string name="dialog_delete_user_text">لا يمكن التراجع عن هذا الإجراء. هل انت متأكد انك تريد حذف حسابك؟</string>
+    <string name="cancel">يلغي</string>
+    <string name="are_you_sure">هل أنت واثق؟</string>
 </resources>

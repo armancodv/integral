@@ -31,4 +31,13 @@
     <string name="integral">Integral</string>
     <string name="form">Untuk m</string>
     <string name="chart">Grafik</string>
+    <string name="profile">Profil</string>
+    <string name="login_or_register">Masuk / Daftar</string>
+    <string name="settings_delete">Hapus pengguna</string>
+    <string name="settings_logout">Keluar</string>
+    <string name="formula">Rumus</string>
+    <string name="ad_view">Tampilan Iklan</string>
+    <string name="dialog_delete_user_text">Tindakan ini tidak bisa dibatalkan. Apakah Anda yakin ingin menghapus akun Anda?</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="are_you_sure">Apakah Anda yakin?</string>
 </resources>

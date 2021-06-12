@@ -5,6 +5,13 @@
         <attr name="settingsTitle" format="string" />
         <attr name="settingsImage" format="reference" />
         <attr name="settingsImageTint" format="reference" />
+        <attr name="settingsIsRed" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileStatView">
+        <attr name="profileStatTitle" format="string" />
+        <attr name="profileStatValue" format="string" />
+        <attr name="profileStatImage" format="reference" />
     </declare-styleable>
 
 </resources>

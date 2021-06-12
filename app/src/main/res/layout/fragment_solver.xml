@@ -5,7 +5,7 @@
     style="@style/Fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigation.solver.SolverFragment">
+    tools:context=".ui.navigation.solver.SolverFragment">
 
     <ScrollView
         android:id="@+id/scrollView"

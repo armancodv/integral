@@ -31,4 +31,13 @@
     <string name="integral">Intégral</string>
     <string name="form">Forme</string>
     <string name="chart">Graphique</string>
+    <string name="profile">Profil</string>
+    <string name="login_or_register">S\'identifier S\'enregistrer</string>
+    <string name="settings_delete">Supprimer l\'utilisateur</string>
+    <string name="settings_logout">Se déconnecter</string>
+    <string name="formula">Formule</string>
+    <string name="ad_view">Affichage de l\'annonce</string>
+    <string name="dialog_delete_user_text">Cette action ne peut pas être annulée. Êtes-vous sûr de vouloir supprimer votre compte ?</string>
+    <string name="cancel">Annuler</string>
+    <string name="are_you_sure">Êtes-vous sûr?</string>
 </resources>

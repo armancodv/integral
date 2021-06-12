@@ -2,6 +2,8 @@ package com.armanco.integral.utils.extensions
 
 import android.content.Context
 import android.os.Build
+import androidx.datastore.preferences.preferencesDataStore
+import com.armanco.integral.AppConstants.DATASTORE
 import java.util.*
 
 fun Context.setLocale(locale: Locale) {
@@ -32,3 +34,5 @@ val Context.currentCountry: String
     get() {
         return currentLocale.country
     }
+
+val Context.dataStore by preferencesDataStore(DATASTORE)

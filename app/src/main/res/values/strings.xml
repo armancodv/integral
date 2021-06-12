@@ -272,5 +272,16 @@
     <string name="integral">Integral</string>
     <string name="form">Form</string>
     <string name="chart">Chart</string>
+    <string name="profile">Profile</string>
+    <string name="login_or_register">Login / Register</string>
+    <string name="settings_delete">Delete User</string>
+    <string name="settings_logout">Logout</string>
+    <string name="xp" translatable="false">XP: <b>%s</b></string>
+    <string name="level" translatable="false">Level: <b>%s</b></string>
+    <string name="formula">Formula</string>
+    <string name="ad_view">Ad View</string>
+    <string name="dialog_delete_user_text">This action cannot be undone. Are you sure you want to delete your account?</string>
+    <string name="cancel">Cancel</string>
+    <string name="are_you_sure">Are you sure?</string>
 
 </resources>

@@ -31,4 +31,13 @@
     <string name="integral">積分</string>
     <string name="form">形</string>
     <string name="chart">チャート</string>
+    <string name="profile">プロフィール</string>
+    <string name="login_or_register">ログイン/登録</string>
+    <string name="settings_delete">ユーザーの削除</string>
+    <string name="settings_logout">ログアウト</string>
+    <string name="formula">式</string>
+    <string name="ad_view">広告ビュー</string>
+    <string name="dialog_delete_user_text">このアクションは元に戻せません。 アカウントを削除してもよろしいですか？</string>
+    <string name="cancel">キャンセル</string>
+    <string name="are_you_sure">本気ですか？</string>
 </resources>

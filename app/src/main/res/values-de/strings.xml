@@ -31,4 +31,13 @@
     <string name="integral">Integral</string>
     <string name="form">Bilden</string>
     <string name="chart">Diagramm</string>
+    <string name="profile">Profil</string>
+    <string name="login_or_register">Anmeldung Registrieren</string>
+    <string name="settings_delete">Benutzer löschen</string>
+    <string name="settings_logout">Ausloggen</string>
+    <string name="formula">Formel</string>
+    <string name="ad_view">Anzeigenansicht</string>
+    <string name="dialog_delete_user_text">Diese Aktion kann nicht rückgängig gemacht werden. Möchten Sie Ihr Konto wirklich löschen?</string>
+    <string name="cancel">Stornieren</string>
+    <string name="are_you_sure">Bist du sicher?</string>
 </resources>

@@ -31,4 +31,13 @@
     <string name="integral">integral</string>
     <string name="form">Form</string>
     <string name="chart">Grafik</string>
+    <string name="profile">Profil</string>
+    <string name="login_or_register">Giriş / Kayıt</string>
+    <string name="settings_delete">Kullanıcıyı sil</string>
+    <string name="settings_logout">Çıkış Yap</string>
+    <string name="formula">formül</string>
+    <string name="ad_view">Reklam Görünümü</string>
+    <string name="dialog_delete_user_text">Bu işlem geri alınamaz. Hesabınızı silmek istediğinizden emin misiniz?</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="are_you_sure">Emin misiniz?</string>
 </resources>

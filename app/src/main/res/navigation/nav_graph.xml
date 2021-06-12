@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/categoryFragment"
-        android:name="com.armanco.integral.navigation.category.CategoryFragment"
+        android:name="com.armanco.integral.ui.navigation.category.CategoryFragment"
         android:label="@string/app_name" >
         <action
             android:id="@+id/action_categoryFragment_to_formulaFragment"
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/formulaFragment"
-        android:name="com.armanco.integral.navigation.formula.FormulaFragment"
+        android:name="com.armanco.integral.ui.navigation.formula.FormulaFragment"
         android:label="{title}" >
 
         <argument
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/imageFragment"
-        android:name="com.armanco.integral.navigation.image.ImageFragment"
+        android:name="com.armanco.integral.ui.navigation.image.ImageFragment"
         android:label="{title}">
 
         <argument
@@ -54,17 +54,22 @@
     </fragment>
     <fragment
         android:id="@+id/solverFragment"
-        android:name="com.armanco.integral.navigation.solver.SolverFragment"
+        android:name="com.armanco.integral.ui.navigation.solver.SolverFragment"
         android:label="@string/solver"
         tools:layout="@layout/fragment_solver" />
     <fragment
         android:id="@+id/plotFragment"
-        android:name="com.armanco.integral.navigation.plot.PlotFragment"
+        android:name="com.armanco.integral.ui.navigation.plot.PlotFragment"
         android:label="@string/plot"
         tools:layout="@layout/fragment_plot" />
     <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.armanco.integral.ui.navigation.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.armanco.integral.navigation.settings.SettingsFragment"
+        android:name="com.armanco.integral.ui.navigation.settings.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
 

@@ -31,4 +31,13 @@
     <string name="integral">Integrante</string>
     <string name="form">Modulo</string>
     <string name="chart">Grafico</string>
+    <string name="profile">Profilo</string>
+    <string name="login_or_register">Accedi / Registrati</string>
+    <string name="settings_delete">Elimina utente</string>
+    <string name="settings_logout">Disconnettersi</string>
+    <string name="formula">Formula</string>
+    <string name="ad_view">Visualizzazione annuncio</string>
+    <string name="dialog_delete_user_text">Questa azione non può essere annullata. Sei sicuro di voler eliminare il tuo account?</string>
+    <string name="cancel">Annulla</string>
+    <string name="are_you_sure">Sei sicuro?</string>
 </resources>
