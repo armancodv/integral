@@ -31,4 +31,13 @@
     <string name="integral">Integrante</string>
     <string name="form">Forma</string>
     <string name="chart">Gráfico</string>
+    <string name="profile">Perfil</string>
+    <string name="login_or_register">Login / Registro</string>
+    <string name="settings_delete">Deletar usuário</string>
+    <string name="settings_logout">Sair</string>
+    <string name="formula">Fórmula</string>
+    <string name="ad_view">Visualização do anúncio</string>
+    <string name="dialog_delete_user_text">Essa ação não pode ser desfeita. Tem certeza que deseja deletar sua conta?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="are_you_sure">Tem certeza?</string>
 </resources>

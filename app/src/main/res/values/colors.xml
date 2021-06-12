@@ -9,4 +9,6 @@
     <color name="darkBg">#333333</color>
     <color name="grayEE">#EEEEEE</color>
     <color name="gray44">#444444</color>
+    <color name="redDark">#AA0000</color>
+    <color name="redBackground">#11FF0000</color>
 </resources>

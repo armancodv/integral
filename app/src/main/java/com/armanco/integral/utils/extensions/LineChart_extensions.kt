@@ -2,11 +2,10 @@ package com.armanco.integral.utils.extensions
 
 import androidx.core.content.ContextCompat
 import com.armanco.integral.R
-import com.armanco.integral.models.PlotEntries
+import com.armanco.integral.data.models.PlotEntries
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 

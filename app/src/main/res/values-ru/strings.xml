@@ -31,4 +31,13 @@
     <string name="integral">интеграл</string>
     <string name="form">Форма</string>
     <string name="chart">Диаграмма</string>
+    <string name="profile">Профиль</string>
+    <string name="login_or_register">Войти / Зарегистрироваться</string>
+    <string name="settings_delete">Удалить пользователя</string>
+    <string name="settings_logout">Выйти</string>
+    <string name="formula">Формула</string>
+    <string name="ad_view">Просмотр рекламы</string>
+    <string name="dialog_delete_user_text">Это действие не может быть отменено. Вы уверены, что хотите удалить свою учетную запись?</string>
+    <string name="cancel">Отмена</string>
+    <string name="are_you_sure">Уверены ли вы?</string>
 </resources>

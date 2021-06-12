@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Fragment"
-    tools:context=".navigation.category.CategoryFragment">
+    tools:context=".ui.navigation.category.CategoryFragment">
 
-    <com.armanco.integral.view.component.CategoryListView
+    <com.armanco.integral.ui.component.CategoryListView
         android:id="@+id/categoryListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

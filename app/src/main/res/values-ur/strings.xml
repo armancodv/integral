@@ -31,4 +31,13 @@
     <string name="integral">لازمی</string>
     <string name="form">فارم</string>
     <string name="chart">چارٹ</string>
+    <string name="profile">پروفائل</string>
+    <string name="login_or_register">لاگ ان / رجسٹر</string>
+    <string name="settings_delete">صارف کو حذف کریں</string>
+    <string name="settings_logout">لاگ آوٹ</string>
+    <string name="formula">فارمولا</string>
+    <string name="ad_view">اشتہار کا نظارہ</string>
+    <string name="dialog_delete_user_text">اس کارروائی کو کالعدم نہیں کیا جاسکتا۔ کیا آپ واقعی اپنا اکاؤنٹ حذف کرنا چاہتے ہیں؟</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="are_you_sure">کیا تمہیں یقین ہے؟</string>
 </resources>

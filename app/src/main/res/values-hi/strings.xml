@@ -31,4 +31,13 @@
     <string name="integral">अविभाज्य</string>
     <string name="form">प्रपत्र</string>
     <string name="chart">चार्ट</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="login_or_register">लॉग इन / रजिस्टर</string>
+    <string name="settings_delete">उपभोक्ता मिटायें</string>
+    <string name="settings_logout">लॉग आउट</string>
+    <string name="formula">सूत्र</string>
+    <string name="ad_view">विज्ञापन दृश्य</string>
+    <string name="dialog_delete_user_text">इस क्रिया को पूर्ववत नहीं किया जा सकता है। क्या आप इस खाते को हटाने के लिए सुनिश्चित हैं?</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="are_you_sure">क्या आपको यकीन है?</string>
 </resources>

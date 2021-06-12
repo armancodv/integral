@@ -31,4 +31,13 @@
     <string name="integral">Integral</string>
     <string name="form">Formulario</string>
     <string name="chart">Gráfico</string>
+    <string name="profile">Perfil</string>
+    <string name="login_or_register">Iniciar sesión / Registrarse</string>
+    <string name="settings_delete">Borrar usuario</string>
+    <string name="settings_logout">Cerrar sesión</string>
+    <string name="formula">Fórmula</string>
+    <string name="ad_view">Vista de anuncio</string>
+    <string name="dialog_delete_user_text">Esta acción no se puede deshacer. ¿Estás seguro de que deseas eliminar tu cuenta?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="are_you_sure">¿Está seguro?</string>
 </resources>

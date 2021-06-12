@@ -31,4 +31,13 @@
     <string name="integral">Integreret</string>
     <string name="form">Form</string>
     <string name="chart">Diagram</string>
+    <string name="profile">Profil</string>
+    <string name="login_or_register">Login / Registrer</string>
+    <string name="settings_delete">Slet bruger</string>
+    <string name="settings_logout">Log ud</string>
+    <string name="formula">Formel</string>
+    <string name="ad_view">Annoncevisning</string>
+    <string name="dialog_delete_user_text">Denne handling kan ikke fortrydes. Er du sikker på, at du vil slette din konto?</string>
+    <string name="cancel">Afbestille</string>
+    <string name="are_you_sure">Er du sikker?</string>
 </resources>

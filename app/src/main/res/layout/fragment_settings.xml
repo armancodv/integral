@@ -13,9 +13,10 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="48dp">
 
-            <com.armanco.integral.view.component.SettingsItemView
+            <com.armanco.integral.ui.component.SettingsItemView
                 android:id="@+id/proVersion"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -23,7 +24,7 @@
                 app:settingsImage="@drawable/ic_baseline_star_24"
                 app:settingsImageTint="@color/primary"/>
 
-            <com.armanco.integral.view.component.SettingsItemView
+            <com.armanco.integral.ui.component.SettingsItemView
                 android:id="@+id/reportBug"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -31,7 +32,7 @@
                 app:settingsImage="@drawable/ic_baseline_bug_report_24"
                 app:settingsImageTint="@color/primary"/>
 
-            <com.armanco.integral.view.component.SettingsItemView
+            <com.armanco.integral.ui.component.SettingsItemView
                 android:id="@+id/contribute"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -39,7 +40,7 @@
                 app:settingsImage="@drawable/ic_baseline_developer_mode_24"
                 app:settingsImageTint="@color/primary"/>
 
-            <com.armanco.integral.view.component.SettingsItemView
+            <com.armanco.integral.ui.component.SettingsItemView
                 android:id="@+id/rate"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -47,7 +48,7 @@
                 app:settingsImage="@drawable/ic_baseline_insert_emoticon_24"
                 app:settingsImageTint="@color/primary"/>
 
-            <com.armanco.integral.view.component.SettingsItemView
+            <com.armanco.integral.ui.component.SettingsItemView
                 android:id="@+id/privacy"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -55,12 +56,39 @@
                 app:settingsImage="@drawable/ic_baseline_privacy_tip_24"
                 app:settingsImageTint="@color/primary"/>
 
-            <com.armanco.integral.view.component.SettingsItemView
+            <com.armanco.integral.ui.component.SettingsItemView
                 android:id="@+id/terms"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 app:settingsTitle="@string/settings_terms"
                 app:settingsImage="@drawable/ic_baseline_text_snippet_24"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.ui.component.SettingsItemView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_logout"
+                app:settingsImage="@drawable/ic_baseline_logout_24"
+                android:visibility="gone"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.ui.component.SettingsItemView
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/settings_delete"
+                app:settingsImage="@drawable/ic_baseline_delete_24"
+                app:settingsIsRed="true"
+                android:visibility="gone"
+                app:settingsImageTint="@color/primary"/>
+
+            <com.armanco.integral.ui.component.SettingsItemView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:settingsTitle="@string/login_or_register"
+                app:settingsImage="@drawable/ic_baseline_login_24"
                 app:settingsImageTint="@color/primary"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>

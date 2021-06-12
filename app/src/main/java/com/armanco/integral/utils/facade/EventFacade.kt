@@ -33,17 +33,18 @@ class EventFacade {
         ))
     }
 
-    fun selectImage(id: Int, categoryId: Int, title: String?) {
+    fun selectImage(id: Int, categoryId: Int, title: String?, counter: Int?) {
         firebaseAnalytics?.logEvent(Event.SELECT_IMAGE, bundleOf(
             Param.ID to id.toString(),
             Param.CATEGORY to categoryId.toString(),
             Param.TITLE to title,
+            Param.COUNTER to counter,
             Param.LANGUAGE to context?.currentLanguage,
             Param.COUNTRY to context?.currentCountry,
         ))
     }
 
-    fun calculate(method: String?, function: String?, lowerLimit: Double?, upperLimit: Double?, steps: Int?, result: Double?) {
+    fun calculate(method: String?, function: String?, lowerLimit: Double?, upperLimit: Double?, steps: Int?, result: Double?, counter: Int? = null) {
         firebaseAnalytics?.logEvent(Event.CALCULATE, bundleOf(
             Param.METHOD to method,
             Param.FUNCTION to function,
@@ -51,17 +52,19 @@ class EventFacade {
             Param.UPPER_LIMIT to upperLimit.toString(),
             Param.STEPS to steps.toString(),
             Param.RESULT to result.toString(),
+            Param.COUNTER to counter,
             Param.LANGUAGE to context?.currentLanguage,
             Param.COUNTRY to context?.currentCountry,
         ))
     }
 
-    fun plot(function: String?, lowerLimit: Double?, upperLimit: Double?, steps: Int?) {
+    fun plot(function: String?, lowerLimit: Double?, upperLimit: Double?, steps: Int?, counter: Int? = null) {
         firebaseAnalytics?.logEvent(Event.PLOT, bundleOf(
             Param.FUNCTION to function,
             Param.LOWER_LIMIT to lowerLimit.toString(),
             Param.UPPER_LIMIT to upperLimit.toString(),
             Param.STEPS to steps.toString(),
+            Param.COUNTER to counter,
             Param.LANGUAGE to context?.currentLanguage,
             Param.COUNTRY to context?.currentCountry,
         ))
@@ -116,6 +119,27 @@ class EventFacade {
         ))
     }
 
+    fun selectDelete() {
+        firebaseAnalytics?.logEvent(Event.SELECT_DELETE, bundleOf(
+            Param.LANGUAGE to context?.currentLanguage,
+            Param.COUNTRY to context?.currentCountry,
+        ))
+    }
+
+    fun selectLogin() {
+        firebaseAnalytics?.logEvent(Event.SELECT_LOGIN, bundleOf(
+            Param.LANGUAGE to context?.currentLanguage,
+            Param.COUNTRY to context?.currentCountry,
+        ))
+    }
+
+    fun selectLogout() {
+        firebaseAnalytics?.logEvent(Event.SELECT_LOGOUT, bundleOf(
+            Param.LANGUAGE to context?.currentLanguage,
+            Param.COUNTRY to context?.currentCountry,
+        ))
+    }
+
 
     companion object {
         object Event {
@@ -130,6 +154,9 @@ class EventFacade {
             const val SELECT_TERMS = "select_terms"
             const val SELECT_RATE = "select_rate"
             const val SUBMIT_RATE = "submit_rate"
+            const val SELECT_DELETE = "select_delete"
+            const val SELECT_LOGIN = "select_login"
+            const val SELECT_LOGOUT = "select_logout"
         }
         object Param {
             const val LANGUAGE = "language"
@@ -143,6 +170,7 @@ class EventFacade {
             const val UPPER_LIMIT = "upper_limit"
             const val RESULT = "result"
             const val STEPS = "steps"
+            const val COUNTER = "counter"
         }
     }
 }

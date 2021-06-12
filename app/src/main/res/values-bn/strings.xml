@@ -31,4 +31,13 @@
     <string name="integral">ইন্টিগ্রাল</string>
     <string name="form">ফর্ম</string>
     <string name="chart">চার্ট</string>
+    <string name="profile">প্রোফাইল</string>
+    <string name="login_or_register">লগইন / নিবন্ধন</string>
+    <string name="settings_delete">ব্যবহারকারী মুছুন</string>
+    <string name="settings_logout">প্রস্থান</string>
+    <string name="formula">সূত্র</string>
+    <string name="ad_view">বিজ্ঞাপন দেখুন</string>
+    <string name="dialog_delete_user_text">এই ক্রিয়াটি পূর্বাবস্থায় ফেরানো যাবে না. আপনি আপনার একাউন্ট মুছে ফেলতে চান আপনি কি নিশ্চিত?</string>
+    <string name="cancel">বাতিল</string>
+    <string name="are_you_sure">তুমি কি নিশ্চিত?</string>
 </resources>

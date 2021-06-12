@@ -17,8 +17,8 @@ android {
         applicationId "com.armanco.integral"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 100015
-        versionName "4.8.0"
+        versionCode 100016
+        versionName "4.8.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -49,10 +49,12 @@ android {
         pro {
             dimension 'default'
             applicationId "com.armanco.integral_pro"
+            buildConfigField "String", "app_name", "\"Integral PRO\""
         }
         persian {
             dimension 'default'
             applicationId "com.armanco.integral_persian"
+            buildConfigField "String", "app_name", "\"Integral Persian\""
         }
     }
 
@@ -101,12 +103,36 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-perf-ktx'
     implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
 
     // json
     implementation 'com.google.code.gson:gson:2.8.6'
 
     // plot
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // auth
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+
+    // encrypt
+    implementation 'com.scottyab:aescrypt:0.0.1'
+
+    // datastore
+    implementation("androidx.datastore:datastore-preferences:1.0.0-beta01")
+
+    // coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3")
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.4.3'
+
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // blur
+    implementation 'jp.wasabeef:blurry:4.0.0'
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

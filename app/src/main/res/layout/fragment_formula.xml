@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Fragment"
-    tools:context=".navigation.formula.FormulaFragment">
+    tools:context=".ui.navigation.formula.FormulaFragment">
 
-    <com.armanco.integral.view.component.FormulaListView
+    <com.armanco.integral.ui.component.FormulaListView
         android:id="@+id/formulaListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
