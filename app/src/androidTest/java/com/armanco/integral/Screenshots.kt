@@ -4,6 +4,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.UiController
@@ -14,6 +16,7 @@ import androidx.test.espresso.matcher.ViewMatchers.isRoot
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.statement.UiThreadStatement.runOnUiThread
 import androidx.test.rule.ActivityTestRule
+import androidx.viewpager2.widget.ViewPager2
 import com.armanco.integral.ui.activity.main.MainActivity
 import org.hamcrest.Matcher
 import org.junit.AfterClass
@@ -37,27 +40,46 @@ class Screenshots {
 
     @Test
     fun testTakeScreenshot() {
+
+        // category
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO) }
-        onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("category_light")
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("3_category_light")
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES) }
-        onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("category_dark")
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("3_category_dark")
+
+        // formula
         onView(withId(R.id.rvCategory)).perform(
             RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(2,click()))
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO) }
-        onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("formula_light")
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("4_formula_light")
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES) }
-        onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("formula_dark")
-        onView(withId(R.id.solver)).perform(click())
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("4_formula_dark")
+
+        // solver
+        runOnUiThread { activityRule.activity.findNavController(R.id.nav_host_fragment).navigate(R.id.solverFragment) }
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO) }
-        onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("solver_light")
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("1_solver_light")
         runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES) }
-        onView(isRoot()).perform(waitFor(2000))
-        Screengrab.screenshot("solver_dark")
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("1_solver_dark")
+
+        // plot
+        runOnUiThread {
+            activityRule.activity.findNavController(R.id.nav_host_fragment).navigate(R.id.plotFragment)
+        }
+        onView(isRoot()).perform(waitFor(1000))
+        onView(withId(R.id.plotButton))?.perform(click())
+        runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO) }
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("2_plot_light")
+        runOnUiThread { AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES) }
+        onView(isRoot()).perform(waitFor(1000))
+        Screengrab.screenshot("2_plot_dark")
 
     }
 
@@ -67,24 +89,6 @@ class Screenshots {
             override fun getDescription(): String = "wait for $delay milliseconds"
             override fun perform(uiController: UiController, v: View?) {
                 uiController.loopMainThreadForAtLeast(delay)
-            }
-        }
-    }
-
-
-    fun clickChildViewWithId(id: Int): ViewAction {
-        return object : ViewAction {
-            override fun getConstraints(): Matcher<View>? {
-                return null
-            }
-
-            override fun getDescription(): String {
-                return "Click on a child view with specified id."
-            }
-
-            override fun perform(uiController: UiController, view: View) {
-                val v = view.findViewById<View>(id)
-                v.performClick()
             }
         }
     }

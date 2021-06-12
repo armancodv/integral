@@ -177,7 +177,42 @@ platform :android do
       build_type: 'AndroidTest'
     )
     capture_android_screenshots
-    supply
+  end
+
+  desc "Deploy screenshots"
+  lane :deploy_screenshots do
+    upload_to_play_store(
+        package_name: 'com.armanco.integral',
+        json_key: ENV['JSON_PATH'],
+        skip_upload_apk: true,
+        skip_upload_aab: true,
+        skip_upload_changelogs: true,
+        skip_upload_metadata: true
+    )
+  end
+
+  desc "Deploy screenshots pro"
+  lane :deploy_screenshots_pro do
+    upload_to_play_store(
+        package_name: 'com.armanco.integral_pro',
+        json_key: ENV['JSON_PATH'],
+        skip_upload_apk: true,
+        skip_upload_aab: true,
+        skip_upload_changelogs: true,
+        skip_upload_metadata: true
+    )
+  end
+
+  desc "Deploy screenshots persian"
+  lane :deploy_screenshots_persian do
+    upload_to_play_store(
+        package_name: 'com.armanco.integral_persian',
+        json_key: ENV['JSON_PATH'],
+        skip_upload_apk: true,
+        skip_upload_aab: true,
+        skip_upload_changelogs: true,
+        skip_upload_metadata: true
+    )
   end
 
 end

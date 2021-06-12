@@ -56,6 +56,21 @@ Submit a new Internal Test (PERSIAN)
 fastlane android screenshots
 ```
 Build debug and test APK for screenshots
+### android deploy_screenshots
+```
+fastlane android deploy_screenshots
+```
+Deploy screenshots
+### android deploy_screenshots_pro
+```
+fastlane android deploy_screenshots_pro
+```
+Deploy screenshots pro
+### android deploy_screenshots_persian
+```
+fastlane android deploy_screenshots_persian
+```
+Deploy screenshots persian
 
 ----
 
