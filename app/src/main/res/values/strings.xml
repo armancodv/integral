@@ -283,5 +283,6 @@
     <string name="dialog_delete_user_text">This action cannot be undone. Are you sure you want to delete your account?</string>
     <string name="cancel">Cancel</string>
     <string name="are_you_sure">Are you sure?</string>
+    <string name="default_notification_channel_id" translatable="false">default</string>
 
 </resources>

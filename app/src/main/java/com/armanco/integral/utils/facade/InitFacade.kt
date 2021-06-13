@@ -1,12 +1,12 @@
 package com.armanco.integral.utils.facade
 
-import android.util.Log
 import com.armanco.integral.data.models.User
 import com.armanco.integral.data.repository.StatRepository
 import com.armanco.integral.data.repository.UserRepository
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.google.firebase.firestore.ktx.toObject
+import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
@@ -20,6 +20,15 @@ class InitFacade @Inject constructor(
     suspend fun init() {
         AuthFacade.user?.let {
             updateUserLocal(it)?.let { it1 -> updateUserFirestore(it, it1) }
+        }
+    }
+
+    private suspend fun getMessagingToken(): String? {
+        return try {
+            FirebaseMessaging.getInstance().token.await()
+        } catch (exception: java.lang.Exception) {
+            FirebaseCrashlytics.getInstance().recordException(exception)
+            null
         }
     }
 
@@ -64,6 +73,7 @@ class InitFacade @Inject constructor(
                 counterCalculate = user.counterCalculate
                 counterFormula = user.counterFormula
                 counterAd = user.counterAd
+                messagingToken = getMessagingToken()
             })?.await()
         } catch (exception: Exception) {
             FirebaseCrashlytics.getInstance().recordException(exception)

@@ -14,6 +14,7 @@ data class User(
     var counterCalculate: Int? = null,
     var counterFormula: Int? = null,
     var counterAd: Int? = null,
+    var messagingToken: String? = null,
 ) {
     fun toMapRemoveNull(): Map<String, Any> {
         val hashMap = hashMapOf<String, Any>()
@@ -28,6 +29,7 @@ data class User(
         counterCalculate?.let { if(it>0) hashMap[COUNTER_CALCULATE] = it }
         counterFormula?.let { if(it>0) hashMap[COUNTER_FORMULA] = it }
         counterAd?.let { if(it>0) hashMap[COUNTER_AD] = it }
+        messagingToken?.let { hashMap[MESSAGING_TOKEN] = it }
         return hashMap
     }
 
@@ -43,6 +45,7 @@ data class User(
         const val COUNTER_CALCULATE = "counterCalculate"
         const val COUNTER_FORMULA = "counterFormula"
         const val COUNTER_AD = "counterAd"
+        const val MESSAGING_TOKEN = "messagingToken"
 
         fun fromFirebaseUser(firebaseUser: FirebaseUser): User {
             return User(
