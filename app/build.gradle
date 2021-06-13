@@ -105,6 +105,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-config-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-inappmessaging-display-ktx'
 
     // json
     implementation 'com.google.code.gson:gson:2.8.6'
