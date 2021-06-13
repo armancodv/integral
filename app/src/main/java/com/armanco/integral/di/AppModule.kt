@@ -40,7 +40,7 @@ object AppModule {
             appContext,
             Db::class.java,
             "database"
-        ).build()
+        ).fallbackToDestructiveMigration().build()
     }
 
     @Singleton

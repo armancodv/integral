@@ -21,16 +21,21 @@ or alternatively using `brew install fastlane`
 fastlane android test
 ```
 Runs all the tests
-### android deploy
-```
-fastlane android deploy
-```
-Deploy a new version to the Google Play
 ### android deploy_all
 ```
 fastlane android deploy_all
 ```
 Deploy All
+### android internal_all
+```
+fastlane android internal_all
+```
+Deploy Internal All
+### android deploy
+```
+fastlane android deploy
+```
+Deploy a new version to the Google Play
 ### android internal
 ```
 fastlane android internal
@@ -56,6 +61,26 @@ Deploy a new version to the Google Play (PERSIAN)
 fastlane android internal_persian
 ```
 Submit a new Internal Test (PERSIAN)
+### android deploy_trigonometry
+```
+fastlane android deploy_trigonometry
+```
+Deploy a new version to the Google Play (Trigonometry)
+### android internal_trigonometry
+```
+fastlane android internal_trigonometry
+```
+Submit a new Internal Test (Trigonometry)
+### android deploy_trigonometry_persian
+```
+fastlane android deploy_trigonometry_persian
+```
+Deploy a new version to the Google Play (Trigonometry PERSIAN)
+### android internal_trigonometry_persian
+```
+fastlane android internal_trigonometry_persian
+```
+Submit a new Internal Test (Trigonometry PERSIAN)
 ### android screenshots
 ```
 fastlane android screenshots

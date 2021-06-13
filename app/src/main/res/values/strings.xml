@@ -285,4 +285,145 @@
     <string name="are_you_sure">Are you sure?</string>
     <string name="default_notification_channel_id" translatable="false">default</string>
 
+    <string name="category_tri_1">Basis</string>
+    <string name="category_tri_2">Symmetry, shifts, and periodicity</string>
+    <string name="category_tri_3">Angle sum and difference</string>
+    <string name="category_tri_4">Double angle</string>
+    <string name="category_tri_5">Triple angle</string>
+    <string name="category_tri_6">Half angle</string>
+    <string name="category_tri_7">Power reduction</string>
+    <string name="category_tri_8">Product to sum</string>
+    <string name="category_tri_9">Sum to product</string>
+    <string name="category_tri_10">Inverse trigonometric</string>
+    <string name="category_tri_11">Derivative</string>
+    <string name="category_tri_12">Exponential</string>
+
+    <string name="tri_1_1" translatable="false">Sine</string>
+    <string name="tri_1_2" translatable="false">Cosine</string>
+    <string name="tri_1_3" translatable="false">Tangent</string>
+    <string name="tri_1_4" translatable="false">Cosecant</string>
+    <string name="tri_1_5" translatable="false">Secant</string>
+    <string name="tri_1_6" translatable="false">Cotangent</string>
+    <string name="tri_1_7" translatable="false">Pythagorean</string>
+
+    <string name="tri_2_1" translatable="false">Reflected in θ=0</string>
+    <string name="tri_2_2" translatable="false">Reflected in θ=π/4</string>
+    <string name="tri_2_3" translatable="false">Reflected in θ=π/2</string>
+    <string name="tri_2_4" translatable="false">Shift by π/2</string>
+    <string name="tri_2_5" translatable="false">Shift by π</string>
+    <string name="tri_2_6" translatable="false">Shift by 2π</string>
+
+    <string name="tri_3_1" translatable="false">Sine</string>
+    <string name="tri_3_2" translatable="false">Cosine</string>
+    <string name="tri_3_3" translatable="false">Tangent</string>
+    <string name="tri_3_4" translatable="false">Arcsine</string>
+    <string name="tri_3_5" translatable="false">Arccosine</string>
+    <string name="tri_3_6" translatable="false">Arctangent</string>
+
+    <string name="tri_4_1" translatable="false">Sine</string>
+    <string name="tri_4_2" translatable="false">Cosine</string>
+    <string name="tri_4_3" translatable="false">Tangent</string>
+    <string name="tri_4_4" translatable="false">Cotangent</string>
+
+    <string name="tri_5_1" translatable="false">Sine</string>
+    <string name="tri_5_2" translatable="false">Cosine</string>
+    <string name="tri_5_3" translatable="false">Tangent</string>
+    <string name="tri_5_4" translatable="false">Cotangent</string>
+
+    <string name="tri_6_1" translatable="false">Sine</string>
+    <string name="tri_6_2" translatable="false">Cosine</string>
+    <string name="tri_6_3" translatable="false">Tangent</string>
+    <string name="tri_6_4" translatable="false">Cotangent</string>
+
+    <string name="tri_7_1" translatable="false">Quadratic Sine</string>
+    <string name="tri_7_2" translatable="false">Quadratic Cosine</string>
+    <string name="tri_7_3" translatable="false">Cubic Sine</string>
+    <string name="tri_7_4" translatable="false">Cubic Cosine</string>
+    <string name="tri_7_5" translatable="false">Biquadratic Sine</string>
+    <string name="tri_7_6" translatable="false">Biquadratic Cosine</string>
+
+    <string name="tri_8_1" translatable="false">cos⁡θ.cosφ</string>
+    <string name="tri_8_2" translatable="false">sinθ.sinφ</string>
+    <string name="tri_8_3" translatable="false">sin⁡θ.cosφ</string>
+    <string name="tri_8_4" translatable="false">cos⁡θ.sinφ</string>
+    <string name="tri_8_5" translatable="false">tan⁡θ.tanφ</string>
+
+    <string name="tri_9_1" translatable="false">sinθ±sinφ</string>
+    <string name="tri_9_2" translatable="false">cosθ+cosφ</string>
+    <string name="tri_9_3" translatable="false">cosθ-cosφ</string>
+
+    <string name="tri_10_1" translatable="false">arcsin(x)+arccos(x)</string>
+    <string name="tri_10_2" translatable="false">arctan(x)+arccot(x)</string>
+    <string name="tri_10_3" translatable="false">arctan(x)+arctan(1/x)</string>
+    <string name="tri_10_4" translatable="false">sin(arccos(x))</string>
+    <string name="tri_10_5" translatable="false">sin(arctan(x))</string>
+    <string name="tri_10_6" translatable="false">cos(arctan(x))</string>
+    <string name="tri_10_7" translatable="false">cos(arcsin(x))</string>
+    <string name="tri_10_8" translatable="false">tan(arcsin(x))</string>
+    <string name="tri_10_9" translatable="false">tan(arccos(x))</string>
+    <string name="tri_10_10" translatable="false">cot(arcsin(x))</string>
+    <string name="tri_10_11" translatable="false">cot(arccos(x))</string>
+
+    <string name="tri_11_1" translatable="false">d(sin(x))/dx</string>
+    <string name="tri_11_2" translatable="false">d(cos(x))/dx</string>
+    <string name="tri_11_3" translatable="false">d(tan(x))/dx</string>
+    <string name="tri_11_4" translatable="false">d(cot(x))/dx</string>
+    <string name="tri_11_5" translatable="false">d(sec(x))/dx</string>
+    <string name="tri_11_6" translatable="false">d(csc(x))/dx</string>
+    <string name="tri_11_7" translatable="false">d(arcsin(x))/dx</string>
+    <string name="tri_11_8" translatable="false">d(arccos(x))/dx</string>
+    <string name="tri_11_9" translatable="false">d(arctan(x))/dx</string>
+    <string name="tri_11_10" translatable="false">d(arccot(x))/dx</string>
+    <string name="tri_11_11" translatable="false">d(arcsec(x))/dx</string>
+    <string name="tri_11_12" translatable="false">d(arccsc(x))/dx</string>
+
+    <string name="tri_12_1" translatable="false">cis(x)</string>
+    <string name="tri_12_2" translatable="false">sinθ</string>
+    <string name="tri_12_3" translatable="false">cosθ</string>
+    <string name="tri_12_4" translatable="false">tanθ</string>
+    <string name="tri_12_5" translatable="false">cscθ</string>
+    <string name="tri_12_6" translatable="false">secθ</string>
+    <string name="tri_12_7" translatable="false">cotθ</string>
+    <string name="tri_12_8" translatable="false">arcsin(x)</string>
+    <string name="tri_12_9" translatable="false">arccos(x)</string>
+    <string name="tri_12_10" translatable="false">arctan(x)</string>
+    <string name="tri_12_11" translatable="false">arccsc(x)</string>
+    <string name="tri_12_12" translatable="false">arcsec(x)</string>
+    <string name="tri_12_13" translatable="false">arccot(x)</string>
+
+    <string name="trigonometry">Trigonometry</string>
+    <string name="inverse_trigonometry">Inverse Trigonometry</string>
+    <string name="angle">Angle</string>
+    <string name="degree">Degree</string>
+    <string name="radian">Radian</string>
+    <string name="arc">Arc</string>
+
+    <string name="sin_title">Sine</string>
+    <string name="cos_title">Cosine</string>
+    <string name="tan_title">Tangent</string>
+    <string name="cot_title">Cotangent</string>
+    <string name="csc_title">Cosecant</string>
+    <string name="sec_title">Secant</string>
+
+    <string name="sin" translatable="false">sin(θ)</string>
+    <string name="cos" translatable="false">cos(θ)</string>
+    <string name="tan" translatable="false">tan(θ)</string>
+    <string name="cot" translatable="false">cot(θ)</string>
+    <string name="csc" translatable="false">csc(θ)</string>
+    <string name="sec" translatable="false">sec(θ)</string>
+
+    <string name="asin_title">Inverse Sine</string>
+    <string name="acos_title">Inverse Cosine</string>
+    <string name="atan_title">Inverse Tangent</string>
+    <string name="acot_title">Inverse Cotangent</string>
+    <string name="acsc_title">Inverse Cosecant</string>
+    <string name="asec_title">Inverse Secant</string>
+
+    <string name="asin" translatable="false">arcsin(x)</string>
+    <string name="acos" translatable="false">arccos(x)</string>
+    <string name="atan" translatable="false">arctan(x)</string>
+    <string name="acot" translatable="false">arccot(x)</string>
+    <string name="acsc" translatable="false">arccsc(x)</string>
+    <string name="asec" translatable="false">arcsec(x)</string>
+
 </resources>

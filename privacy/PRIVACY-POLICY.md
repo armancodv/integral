@@ -12,6 +12,8 @@ This privacy covers all the apps brands including:
 - **Integral** - link to app: [Integral](https://play.google.com/store/apps/details?id=com.armanco.integral)
 - **Integral Pro** - link to app: [Integral Pro](https://play.google.com/store/apps/details?id=com.armanco.integral_pro)
 - **Integral Persian** - link to app: [Integral Persian](https://play.google.com/store/apps/details?id=com.armanco.integral_persian)
+- **Trigonometry** - link to app: [Trigonometry](https://play.google.com/store/apps/details?id=com.armanco.trigonometry)
+- **Trigonometry Persian** - link to app: [Trigonometry Persian](https://play.google.com/store/apps/details?id=com.armanco.trigonometry_persian)
 
 
 ## What data do we collect?
@@ -33,7 +35,7 @@ You directly provide us with most of the data we collect. We collect data and pr
 
 We may also receive your data indirectly from the following sources:
 
-- Integral, Integral Pro, Integral Persian are the same apps and data are shared between them
+- Integral, Integral Pro, Integral Persian, Trigonometry, and Trigonometry Persian are the same apps and data are shared between them
 - Authentication from third-parties such as Google
 
 ## How will we use your data?

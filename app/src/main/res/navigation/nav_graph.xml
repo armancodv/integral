@@ -56,7 +56,7 @@
         android:id="@+id/solverFragment"
         android:name="com.armanco.integral.ui.navigation.solver.SolverFragment"
         android:label="@string/solver"
-        tools:layout="@layout/fragment_solver" />
+        tools:layout="@layout/view_pager_integral_solver" />
     <fragment
         android:id="@+id/plotFragment"
         android:name="com.armanco.integral.ui.navigation.plot.PlotFragment"

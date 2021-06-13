@@ -14,6 +14,7 @@ import com.armanco.integral.utils.extensions.goToUrl
 import com.armanco.integral.utils.extensions.isPro
 import com.armanco.integral.utils.facade.AuthFacade
 import com.armanco.integral.utils.facade.ReviewFacade
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_settings.*
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
@@ -87,6 +88,8 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         super.onActivityResult(requestCode, resultCode, data)
         AuthFacade.onAuthResult(requestCode, resultCode, data).addOnCompleteListener {
             if (it.result != null) model.submitLogin()
+        }.addOnFailureListener {
+            FirebaseCrashlytics.getInstance().recordException(it)
         }
     }
 
