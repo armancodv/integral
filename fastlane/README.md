@@ -26,6 +26,11 @@ Runs all the tests
 fastlane android deploy
 ```
 Deploy a new version to the Google Play
+### android deploy_all
+```
+fastlane android deploy_all
+```
+Deploy All
 ### android internal
 ```
 fastlane android internal

@@ -23,9 +23,6 @@ platform :android do
 
   desc "Deploy a new version to the Google Play"
   lane :deploy do
-    validate_play_store_json_key(
-        json_key: ENV['JSON_PATH']
-    )
     gradle(task: "test")
     gradle(
         task: 'assembleFreeRelease',
@@ -41,15 +38,23 @@ platform :android do
         track: 'production',
         apk: ENV['APK_PATH_FREE'],
         json_key: ENV['JSON_PATH'],
-        skip_upload_aab: true
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
     )
+  end
+
+  desc "Deploy All"
+  lane :deploy_all do
+    deploy
+    deploy_pro
+    deploy_persian
   end
 
   desc "Submit a new Internal Test"
   lane :internal do
-    validate_play_store_json_key(
-        json_key: ENV['JSON_PATH']
-    )
     gradle(task: "test")
     gradle(
         task: 'assembleFreeRelease',
@@ -65,16 +70,17 @@ platform :android do
         track: 'internal',
         apk: ENV['APK_PATH_FREE'],
         json_key: ENV['JSON_PATH'],
-        skip_upload_aab: true
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
     )
   end
 
 
   desc "Deploy a new version to the Google Play (PRO)"
   lane :deploy_pro do
-    validate_play_store_json_key(
-        json_key: ENV['JSON_PATH']
-    )
     gradle(task: "test")
     gradle(
         task: 'assembleProRelease',
@@ -90,15 +96,16 @@ platform :android do
         track: 'production',
         apk: ENV['APK_PATH_PRO'],
         json_key: ENV['JSON_PATH'],
-        skip_upload_aab: true
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
     )
   end
 
   desc "Submit a new Internal Test (PRO)"
   lane :internal_pro do
-    validate_play_store_json_key(
-        json_key: ENV['JSON_PATH']
-    )
     gradle(task: "test")
     gradle(
         task: 'assembleProRelease',
@@ -114,15 +121,16 @@ platform :android do
         track: 'internal',
         apk: ENV['APK_PATH_PRO'],
         json_key: ENV['JSON_PATH'],
-        skip_upload_aab: true
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
     )
   end
 
   desc "Deploy a new version to the Google Play (PERSIAN)"
   lane :deploy_persian do
-    validate_play_store_json_key(
-        json_key: ENV['JSON_PATH']
-    )
     gradle(task: "test")
     gradle(
         task: 'assemblePersianRelease',
@@ -138,15 +146,16 @@ platform :android do
         track: 'production',
         apk: ENV['APK_PATH_PERSIAN'],
         json_key: ENV['JSON_PATH'],
-        skip_upload_aab: true
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
     )
   end
 
   desc "Submit a new Internal Test (PERSIAN)"
   lane :internal_persian do
-    validate_play_store_json_key(
-        json_key: ENV['JSON_PATH']
-    )
     gradle(task: "test")
     gradle(
         task: 'assemblePersianRelease',
@@ -162,7 +171,11 @@ platform :android do
         track: 'internal',
         apk: ENV['APK_PATH_PERSIAN'],
         json_key: ENV['JSON_PATH'],
-        skip_upload_aab: true
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
     )
   end
 

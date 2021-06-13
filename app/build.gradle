@@ -17,8 +17,8 @@ android {
         applicationId "com.armanco.integral"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 100017
-        versionName "4.9.0"
+        versionCode 100018
+        versionName "4.10.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
