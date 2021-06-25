@@ -14,4 +14,10 @@
         <attr name="profileStatImage" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="SolverScreenView">
+        <attr name="screenTitle" format="string" />
+        <attr name="screenSubtitle" format="string" />
+        <attr name="screenResult" format="string" />
+    </declare-styleable>
+
 </resources>

@@ -17,8 +17,8 @@ android {
         applicationId "com.armanco.integral"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 100018
-        versionName "4.10.0"
+        versionCode 100020
+        versionName "4.10.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -49,12 +49,18 @@ android {
         pro {
             dimension 'default'
             applicationId "com.armanco.integral_pro"
-            buildConfigField "String", "app_name", "\"Integral PRO\""
         }
         persian {
             dimension 'default'
             applicationId "com.armanco.integral_persian"
-            buildConfigField "String", "app_name", "\"Integral Persian\""
+        }
+        trigonometry {
+            dimension 'default'
+            applicationId "com.armanco.trigonometry"
+        }
+        trigonometryPersian {
+            dimension 'default'
+            applicationId "com.armanco.trigonometry_persian"
         }
     }
 

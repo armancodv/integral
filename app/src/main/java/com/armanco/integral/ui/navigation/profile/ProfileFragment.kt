@@ -8,6 +8,7 @@ import androidx.fragment.app.viewModels
 import com.armanco.integral.R
 import com.armanco.integral.utils.facade.AuthFacade
 import com.bumptech.glide.Glide
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import dagger.hilt.android.AndroidEntryPoint
 import jp.wasabeef.blurry.Blurry
 import kotlinx.android.synthetic.main.fragment_profile.*
@@ -78,6 +79,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         super.onActivityResult(requestCode, resultCode, data)
         AuthFacade.onAuthResult(requestCode, resultCode, data).addOnCompleteListener {
             if (it.result != null) model.submitLogin()
+        }.addOnFailureListener {
+            FirebaseCrashlytics.getInstance().recordException(it)
         }
     }
 }

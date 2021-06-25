@@ -11,6 +11,7 @@ import com.armanco.integral.utils.facade.EventFacade
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import java.lang.Exception
 import javax.inject.Inject
 
 @HiltViewModel
@@ -21,6 +22,7 @@ class PlotViewModel @Inject constructor(
     private val remoteConfig: FirebaseRemoteConfig,
 ): ViewModel() {
     val configAds = MutableLiveData(remoteConfig.configAds)
+    val error = MutableLiveData<String?>()
     val function = MutableLiveData("sin(x)")
     val lowerLimit = MutableLiveData(0.0)
     val upperLimit = MutableLiveData(10.0)
@@ -34,12 +36,17 @@ class PlotViewModel @Inject constructor(
 
     fun plot(track: Boolean = true) {
         if(function.value != null && lowerLimit.value!=null && upperLimit.value!=null && steps.value!=null) {
-            plotEntries.postValue(
-                PlotEntries(
-                    entries = repository.entries(function.value!!, lowerLimit.value!!, upperLimit.value!!, steps.value!!),
-                    entriesIntegral = repository.entriesIntegral(function.value!!, lowerLimit.value!!, upperLimit.value!!, steps.value!!),
+            try {
+                plotEntries.postValue(
+                    PlotEntries(
+                        entries = repository.entries(function.value!!, lowerLimit.value!!, upperLimit.value!!, steps.value!!),
+                        entriesIntegral = repository.entriesIntegral(function.value!!, lowerLimit.value!!, upperLimit.value!!, steps.value!!),
+                    )
                 )
-            )
+                error.postValue(null)
+            } catch (e: Exception) {
+                error.postValue(e.message)
+            }
             if(track) {
                 viewModelScope.launch {
                     if(lastFunction.value != function.value) {

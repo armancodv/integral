@@ -21,6 +21,24 @@ platform :android do
     gradle(task: "test")
   end
 
+  desc "Deploy All"
+  lane :deploy_all do
+    deploy
+    deploy_pro
+    deploy_persian
+    deploy_trigonometry
+    deploy_trigonometry_persian
+  end
+
+  desc "Deploy Internal All"
+  lane :internal_all do
+    internal
+    internal_pro
+    internal_persian
+    internal_trigonometry
+    internal_trigonometry_persian
+  end
+
   desc "Deploy a new version to the Google Play"
   lane :deploy do
     gradle(task: "test")
@@ -44,13 +62,6 @@ platform :android do
         skip_upload_images: true,
         skip_upload_screenshots: true
     )
-  end
-
-  desc "Deploy All"
-  lane :deploy_all do
-    deploy
-    deploy_pro
-    deploy_persian
   end
 
   desc "Submit a new Internal Test"
@@ -81,7 +92,7 @@ platform :android do
 
   desc "Deploy a new version to the Google Play (PRO)"
   lane :deploy_pro do
-    gradle(task: "test")
+    gradle(task: "testProDebugUnitTest")
     gradle(
         task: 'assembleProRelease',
         properties: {
@@ -106,7 +117,7 @@ platform :android do
 
   desc "Submit a new Internal Test (PRO)"
   lane :internal_pro do
-    gradle(task: "test")
+    gradle(task: "testProDebugUnitTest")
     gradle(
         task: 'assembleProRelease',
         properties: {
@@ -131,7 +142,7 @@ platform :android do
 
   desc "Deploy a new version to the Google Play (PERSIAN)"
   lane :deploy_persian do
-    gradle(task: "test")
+    gradle(task: "testPersianDebugUnitTest")
     gradle(
         task: 'assemblePersianRelease',
         properties: {
@@ -156,7 +167,7 @@ platform :android do
 
   desc "Submit a new Internal Test (PERSIAN)"
   lane :internal_persian do
-    gradle(task: "test")
+    gradle(task: "testPersianDebugUnitTest")
     gradle(
         task: 'assemblePersianRelease',
         properties: {
@@ -170,6 +181,106 @@ platform :android do
         package_name: 'com.armanco.integral_persian',
         track: 'internal',
         apk: ENV['APK_PATH_PERSIAN'],
+        json_key: ENV['JSON_PATH'],
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
+    )
+  end
+
+  desc "Deploy a new version to the Google Play (Trigonometry)"
+  lane :deploy_trigonometry do
+    gradle(task: "testTrigonometryDebugUnitTest")
+    gradle(
+        task: 'assembleTrigonometryRelease',
+        properties: {
+            "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+    upload_to_play_store(
+        package_name: 'com.armanco.trigonometry',
+        track: 'production',
+        apk: ENV['APK_PATH_TRIGONOMETRY'],
+        json_key: ENV['JSON_PATH'],
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
+    )
+  end
+
+  desc "Submit a new Internal Test (Trigonometry)"
+  lane :internal_trigonometry do
+    gradle(task: "testTrigonometryDebugUnitTest")
+    gradle(
+        task: 'assembleTrigonometryRelease',
+        properties: {
+            "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+    upload_to_play_store(
+        package_name: 'com.armanco.trigonometry',
+        track: 'internal',
+        apk: ENV['APK_PATH_TRIGONOMETRY'],
+        json_key: ENV['JSON_PATH'],
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
+    )
+  end
+
+  desc "Deploy a new version to the Google Play (Trigonometry PERSIAN)"
+  lane :deploy_trigonometry_persian do
+    gradle(task: "testTrigonometryPersianDebugUnitTest")
+    gradle(
+        task: 'assembleTrigonometryPersianRelease',
+        properties: {
+            "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+    upload_to_play_store(
+        package_name: 'com.armanco.trigonometry_persian',
+        track: 'production',
+        apk: ENV['APK_PATH_TRIGONOMETRY_PERSIAN'],
+        json_key: ENV['JSON_PATH'],
+        skip_upload_aab: true,
+        skip_upload_metadata: true,
+        skip_upload_changelogs: true,
+        skip_upload_images: true,
+        skip_upload_screenshots: true
+    )
+  end
+
+  desc "Submit a new Internal Test (Trigonometry PERSIAN)"
+  lane :internal_trigonometry_persian do
+    gradle(task: "testTrigonometryPersianDebugUnitTest")
+    gradle(
+        task: 'assembleTrigonometryPersianRelease',
+        properties: {
+            "android.injected.signing.store.file" => ENV['KEYSTORE_PATH'],
+            "android.injected.signing.store.password" => ENV['STORE_PASSWORD'],
+            "android.injected.signing.key.alias" => ENV['KEY_ALIAS'],
+            "android.injected.signing.key.password" => ENV['KEY_PASSWORD'],
+        }
+    )
+    upload_to_play_store(
+        package_name: 'com.armanco.trigonometry_persian',
+        track: 'internal',
+        apk: ENV['APK_PATH_TRIGONOMETRY_PERSIAN'],
         json_key: ENV['JSON_PATH'],
         skip_upload_aab: true,
         skip_upload_metadata: true,

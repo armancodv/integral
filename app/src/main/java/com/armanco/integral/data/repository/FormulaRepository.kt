@@ -7,7 +7,7 @@ import javax.inject.Inject
 
 class FormulaRepository @Inject constructor(
     private val formulaDao: FormulaDao
-){
+) {
     suspend fun getAll() = formulaDao.getAll()
     suspend fun getCount() = formulaDao.getCount()
     suspend fun deleteAll() = formulaDao.deleteAll()
@@ -251,5 +251,100 @@ class FormulaRepository @Inject constructor(
             Formula(1125, 11, R.drawable.img_11_25, R.string.formula_11_25),
             Formula(1126, 11, R.drawable.img_11_26, R.string.formula_11_26),
         )
+        insertAll(
+            Formula(1201, 12, R.drawable.tri_1_1, R.string.tri_1_1),
+            Formula(1202, 12, R.drawable.tri_1_2, R.string.tri_1_2),
+            Formula(1203, 12, R.drawable.tri_1_3, R.string.tri_1_3),
+            Formula(1204, 12, R.drawable.tri_1_4, R.string.tri_1_4),
+            Formula(1205, 12, R.drawable.tri_1_5, R.string.tri_1_5),
+            Formula(1206, 12, R.drawable.tri_1_6, R.string.tri_1_6),
+            Formula(1207, 12, R.drawable.tri_1_7, R.string.tri_1_7),
+
+            Formula(1301, 13, R.drawable.tri_2_1, R.string.tri_2_1),
+            Formula(1302, 13, R.drawable.tri_2_2, R.string.tri_2_2),
+            Formula(1303, 13, R.drawable.tri_2_3, R.string.tri_2_3),
+            Formula(1304, 13, R.drawable.tri_2_4, R.string.tri_2_4),
+            Formula(1305, 13, R.drawable.tri_2_5, R.string.tri_2_5),
+            Formula(1306, 13, R.drawable.tri_2_6, R.string.tri_2_6),
+
+            Formula(1401, 14, R.drawable.tri_3_1, R.string.tri_3_1),
+            Formula(1402, 14, R.drawable.tri_3_2, R.string.tri_3_2),
+            Formula(1403, 14, R.drawable.tri_3_3, R.string.tri_3_3),
+            Formula(1404, 14, R.drawable.tri_3_4, R.string.tri_3_4),
+            Formula(1405, 14, R.drawable.tri_3_5, R.string.tri_3_5),
+            Formula(1406, 14, R.drawable.tri_3_6, R.string.tri_3_6),
+
+            Formula(1501, 15, R.drawable.tri_4_1, R.string.tri_4_1),
+            Formula(1502, 15, R.drawable.tri_4_2, R.string.tri_4_2),
+            Formula(1503, 15, R.drawable.tri_4_3, R.string.tri_4_3),
+            Formula(1504, 15, R.drawable.tri_4_4, R.string.tri_4_4),
+
+            Formula(1601, 16, R.drawable.tri_5_1, R.string.tri_5_1),
+            Formula(1602, 16, R.drawable.tri_5_2, R.string.tri_5_2),
+            Formula(1603, 16, R.drawable.tri_5_3, R.string.tri_5_3),
+            Formula(1604, 16, R.drawable.tri_5_4, R.string.tri_5_4),
+
+            Formula(1701, 17, R.drawable.tri_6_1, R.string.tri_6_1),
+            Formula(1702, 17, R.drawable.tri_6_2, R.string.tri_6_2),
+            Formula(1703, 17, R.drawable.tri_6_3, R.string.tri_6_3),
+            Formula(1704, 17, R.drawable.tri_6_4, R.string.tri_6_4),
+
+            Formula(1801, 18, R.drawable.tri_7_1, R.string.tri_7_1),
+            Formula(1802, 18, R.drawable.tri_7_2, R.string.tri_7_2),
+            Formula(1803, 18, R.drawable.tri_7_3, R.string.tri_7_3),
+            Formula(1804, 18, R.drawable.tri_7_4, R.string.tri_7_4),
+            Formula(1805, 18, R.drawable.tri_7_5, R.string.tri_7_5),
+            Formula(1806, 18, R.drawable.tri_7_6, R.string.tri_7_6),
+
+            Formula(1901, 19, R.drawable.tri_8_1, R.string.tri_8_1),
+            Formula(1902, 19, R.drawable.tri_8_2, R.string.tri_8_2),
+            Formula(1903, 19, R.drawable.tri_8_3, R.string.tri_8_3),
+            Formula(1904, 19, R.drawable.tri_8_4, R.string.tri_8_4),
+            Formula(1905, 19, R.drawable.tri_8_5, R.string.tri_8_5),
+
+            Formula(2001, 20, R.drawable.tri_9_1, R.string.tri_9_1),
+            Formula(2002, 20, R.drawable.tri_9_2, R.string.tri_9_2),
+            Formula(2003, 20, R.drawable.tri_9_3, R.string.tri_9_3),
+
+            Formula(2101, 21, R.drawable.tri_10_1, R.string.tri_10_1),
+            Formula(2102, 21, R.drawable.tri_10_2, R.string.tri_10_2),
+            Formula(2103, 21, R.drawable.tri_10_3, R.string.tri_10_3),
+            Formula(2104, 21, R.drawable.tri_10_4, R.string.tri_10_4),
+            Formula(2105, 21, R.drawable.tri_10_5, R.string.tri_10_5),
+            Formula(2106, 21, R.drawable.tri_10_6, R.string.tri_10_6),
+            Formula(2107, 21, R.drawable.tri_10_7, R.string.tri_10_7),
+            Formula(2108, 21, R.drawable.tri_10_8, R.string.tri_10_8),
+            Formula(2109, 21, R.drawable.tri_10_9, R.string.tri_10_9),
+            Formula(2110, 21, R.drawable.tri_10_10, R.string.tri_10_10),
+            Formula(2111, 21, R.drawable.tri_10_11, R.string.tri_10_11),
+
+            Formula(2201, 22, R.drawable.tri_11_1, R.string.tri_11_1),
+            Formula(2202, 22, R.drawable.tri_11_2, R.string.tri_11_2),
+            Formula(2203, 22, R.drawable.tri_11_3, R.string.tri_11_3),
+            Formula(2204, 22, R.drawable.tri_11_4, R.string.tri_11_4),
+            Formula(2205, 22, R.drawable.tri_11_5, R.string.tri_11_5),
+            Formula(2206, 22, R.drawable.tri_11_6, R.string.tri_11_6),
+            Formula(2207, 22, R.drawable.tri_11_7, R.string.tri_11_7),
+            Formula(2208, 22, R.drawable.tri_11_8, R.string.tri_11_8),
+            Formula(2209, 22, R.drawable.tri_11_9, R.string.tri_11_9),
+            Formula(2210, 22, R.drawable.tri_11_10, R.string.tri_11_10),
+            Formula(2211, 22, R.drawable.tri_11_11, R.string.tri_11_11),
+            Formula(2212, 22, R.drawable.tri_11_12, R.string.tri_11_12),
+
+            Formula(2301, 23, R.drawable.tri_12_1, R.string.tri_12_1),
+            Formula(2302, 23, R.drawable.tri_12_2, R.string.tri_12_2),
+            Formula(2303, 23, R.drawable.tri_12_3, R.string.tri_12_3),
+            Formula(2304, 23, R.drawable.tri_12_4, R.string.tri_12_4),
+            Formula(2305, 23, R.drawable.tri_12_5, R.string.tri_12_5),
+            Formula(2306, 23, R.drawable.tri_12_6, R.string.tri_12_6),
+            Formula(2307, 23, R.drawable.tri_12_7, R.string.tri_12_7),
+            Formula(2308, 23, R.drawable.tri_12_8, R.string.tri_12_8),
+            Formula(2309, 23, R.drawable.tri_12_9, R.string.tri_12_9),
+            Formula(2310, 23, R.drawable.tri_12_10, R.string.tri_12_10),
+            Formula(2311, 23, R.drawable.tri_12_11, R.string.tri_12_11),
+            Formula(2312, 23, R.drawable.tri_12_12, R.string.tri_12_12),
+            Formula(2313, 23, R.drawable.tri_12_13, R.string.tri_12_13)
+
+            )
     }
 }

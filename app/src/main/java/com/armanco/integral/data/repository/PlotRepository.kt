@@ -1,6 +1,7 @@
 package com.armanco.integral.data.repository
 
 import com.github.mikephil.charting.data.Entry
+import com.mathlibrary.exception.CalculatorException
 import com.mathlibrary.function.FunctionX
 import javax.inject.Inject
 
@@ -8,11 +9,13 @@ class PlotRepository @Inject constructor(
     private val solverRepository: SolverRepository
 ) {
 
+    @Throws(CalculatorException::class)
     fun value(f: String, x: Double): Double {
         val function = FunctionX(f, false)
         return function.getF_xo(x)
     }
 
+    @Throws(CalculatorException::class)
     fun entries(f: String, lowerLimit: Double, upperLimit: Double, steps: Int): List<Entry> {
         val entries = mutableListOf<Entry>()
         val dx = (upperLimit - lowerLimit) / steps.toDouble()
@@ -23,6 +26,7 @@ class PlotRepository @Inject constructor(
         return entries
     }
 
+    @Throws(CalculatorException::class)
     fun entriesIntegral(f: String, lowerLimit: Double, upperLimit: Double, steps: Int): List<Entry> {
         val entries = mutableListOf<Entry>()
         val dx = (upperLimit - lowerLimit) / steps.toDouble()

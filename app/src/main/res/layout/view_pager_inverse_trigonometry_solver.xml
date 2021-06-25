@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:paddingBottom="24dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/angleLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/arc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:hint="@string/arc" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/degree"
+                android:layout_gravity="end"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/degree"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/degree" />
+
+                <Button
+                    android:id="@+id/radian"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radian" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.armanco.integral.ui.component.SolverScreenView
+                android:id="@+id/asinScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:screenTitle="@string/asin_title"
+                app:screenSubtitle="@string/asin"
+                app:screenResult="0.0"
+                android:layout_marginTop="8dp"/>
+
+            <com.armanco.integral.ui.component.SolverScreenView
+                android:id="@+id/acosScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:screenTitle="@string/acos_title"
+                app:screenSubtitle="@string/acos"
+                app:screenResult="0.0"
+                android:layout_marginTop="8dp"/>
+
+            <com.armanco.integral.ui.component.SolverScreenView
+                android:id="@+id/atanScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:screenTitle="@string/atan_title"
+                app:screenSubtitle="@string/atan"
+                app:screenResult="0.0"
+                android:layout_marginTop="8dp"/>
+
+            <com.armanco.integral.ui.component.SolverScreenView
+                android:id="@+id/acotScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:screenTitle="@string/acot_title"
+                app:screenSubtitle="@string/acot"
+                app:screenResult="0.0"
+                android:layout_marginTop="8dp"/>
+
+            <com.armanco.integral.ui.component.SolverScreenView
+                android:id="@+id/acscScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:screenTitle="@string/acsc_title"
+                app:screenSubtitle="@string/acsc"
+                app:screenResult="0.0"
+                android:layout_marginTop="8dp"/>
+
+            <com.armanco.integral.ui.component.SolverScreenView
+                android:id="@+id/asecScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:screenTitle="@string/asec_title"
+                app:screenSubtitle="@string/asec"
+                app:screenResult="0.0"
+                android:layout_marginTop="8dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,12 +35,15 @@ class PlotFormViewPager: Fragment(R.layout.view_pager_plot_form) {
         steps?.addTextChangedListener {
             model.steps.postValue(it.toString().toIntOrNull())
         }
+        model.error.observe(viewLifecycleOwner) {
+            function?.error = if(!it.isNullOrBlank()) it else null
+            if(it.isNullOrBlank()) onPlot?.invoke()
+        }
         plotButton?.setOnClickListener {
             activity?.showRewardedRandom(model.configAds.value) {
                 model.adShown()
             }
             model.plot()
-            onPlot?.invoke()
         }
     }
 }

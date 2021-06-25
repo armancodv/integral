@@ -76,19 +76,24 @@ fun Activity.showRewarded(rewardedId: String?, onUserEarnedRewardListener: OnUse
 }
 
 fun Activity.showRewardedRandom(configAds: ConfigAds?, adShown: ()->Unit): Boolean {
-    val show = Random.nextInt(0, 2) == 0
+    val show = Random.nextInt(0, configAds?.randomSize ?: 2) == 0
     if(show) {
-        when (BuildConfig.FLAVOR) {
+        showRewarded(when (BuildConfig.FLAVOR) {
             AppConstants.FLAVOR_PERSIAN -> {
-                showRewarded(configAds?.integralPersian?.rewardedId) {
-                    adShown.invoke()
-                }
+                configAds?.integralPersian?.rewardedId
             }
             AppConstants.FLAVOR_FREE -> {
-                showRewarded(configAds?.integral?.rewardedId) {
-                    adShown.invoke()
-                }
+                configAds?.integral?.rewardedId
             }
+            AppConstants.FLAVOR_TRIGONOMETRY -> {
+                configAds?.trigonometry?.rewardedId
+            }
+            AppConstants.FLAVOR_TRIGONOMETRY_PERSIAN -> {
+                configAds?.trigonometryPersian?.rewardedId
+            }
+            else -> null
+        }) {
+            adShown.invoke()
         }
     }
     return show

@@ -5,9 +5,11 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.armanco.integral.AppConstants
+import com.armanco.integral.BuildConfig
 import com.armanco.integral.R
 import com.armanco.integral.utils.extensions.configAds
-import com.armanco.integral.utils.extensions.isPersian
+import com.armanco.integral.utils.extensions.isIntegralPersianOrTrigonometryPersian
 import com.armanco.integral.utils.extensions.isPro
 import com.armanco.integral.utils.extensions.setLocale
 import com.google.android.gms.ads.AdRequest
@@ -28,8 +30,21 @@ class MainActivity: AppCompatActivity() {
         val model: MainViewModel by viewModels()
         model.initEvents(this)
         model.configAds.observe(this) {
-            if(!isPro) initAdMob(it?.bannerId)
-            else removeAdMob()
+            initAdMob(when (BuildConfig.FLAVOR) {
+                AppConstants.FLAVOR_PERSIAN -> {
+                    it?.integralPersian?.bannerId
+                }
+                AppConstants.FLAVOR_FREE -> {
+                    it?.integral?.bannerId
+                }
+                AppConstants.FLAVOR_TRIGONOMETRY -> {
+                    it?.trigonometry?.bannerId
+                }
+                AppConstants.FLAVOR_TRIGONOMETRY_PERSIAN -> {
+                    it?.trigonometryPersian?.bannerId
+                }
+                else -> null
+            })
         }
         model.remoteConfig.fetchAndActivate().addOnCompleteListener(this) {
             model.configAds.postValue(model.remoteConfig.configAds)
@@ -39,12 +54,16 @@ class MainActivity: AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        if(isPersian) {
+        if(isIntegralPersianOrTrigonometryPersian) {
             setLocale(Locale("fa"))
         }
     }
 
     private fun initAdMob(bannerId: String?) {
+        if(bannerId.isNullOrBlank()) {
+            removeAdMob()
+            return
+        }
         MobileAds.initialize(this)
         removeAdMob()
         val adView = AdView(this)
